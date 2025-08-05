@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Scale, Award, Users, Calendar, MapPin, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -33,8 +34,15 @@ export default function HakkimizdaPage() {
         >
           <div className="relative">
             <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-12 text-white">
-              <div className="w-48 h-48 mx-auto bg-white/10 rounded-full mb-8 flex items-center justify-center backdrop-blur-sm">
-                <Scale className="w-24 h-24 text-white" />
+              <div className="w-48 h-48 mx-auto rounded-full mb-8 overflow-hidden border-4 border-white/20 shadow-2xl">
+                <Image
+                  src="/images/db6a08605d87ee01c65b32daff2ad111.jpg"
+                  alt="Av. Işıl Akpınar Profil Fotoğrafı"
+                  width={192}
+                  height={192}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
               <div className="text-center">
                 <h2 className="text-3xl font-bold mb-3">Av. Işıl Akpınar</h2>
