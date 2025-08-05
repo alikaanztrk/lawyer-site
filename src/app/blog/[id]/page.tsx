@@ -1,6 +1,7 @@
 'use client';
 
 import { notFound } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock, User, Tag, Share2, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -92,8 +93,9 @@ const relatedPosts = [
   { id: 5, title: 'Miras Hukuku Rehberi', category: 'Medeni Hukuk' }
 ];
 
-export default async function BlogDetailPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
+export default function BlogDetailPage() {
+  const params = useParams();
+  const id = params.id as string;
   const post = blogPosts[parseInt(id) as keyof typeof blogPosts];
   
   if (!post) {

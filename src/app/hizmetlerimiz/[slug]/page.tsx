@@ -1,6 +1,7 @@
 'use client';
 
 import { notFound } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle, Phone, Mail, Calendar, Scale, User, Building, Briefcase, Home, Heart, Gavel } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -179,15 +180,16 @@ const servicesData = {
   }
 };
 
-export default async function ServiceDetailPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export default function ServiceDetailPage() {
+  const params = useParams();
+  const slug = params.slug as string;
   const service = servicesData[slug as keyof typeof servicesData];
   
   if (!service) {
     notFound();
   }
 
-  const IconComponent = iconMap[service.icon];
+  const IconComponent = iconMap[service.icon as keyof typeof iconMap];
 
   return (
     <div className="py-24 bg-white">
