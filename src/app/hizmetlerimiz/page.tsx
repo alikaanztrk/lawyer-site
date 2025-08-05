@@ -124,7 +124,7 @@ export default function HizmetlerimizPage() {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {services.map((service, index) => {
-            const IconComponent = iconMap[service.icon];
+            const IconComponent = iconMap[service.icon as keyof typeof iconMap];
             return (
               <motion.div
                 key={service.id}
