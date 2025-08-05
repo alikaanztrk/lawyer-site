@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Calendar, Clock, Phone, Mail, User, CheckCircle } from 'lucide-react';
+import { Calendar, Clock, Phone, Mail, CheckCircle } from 'lucide-react';
 
 export default function RandevuPage() {
   return (

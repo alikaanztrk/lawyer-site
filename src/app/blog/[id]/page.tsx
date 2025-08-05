@@ -114,7 +114,7 @@ export default function BlogDetailPage({ params }: { params: { id: string } }) {
             className="inline-flex items-center text-slate-600 hover:text-slate-900 transition-colors"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Blog'a Geri Dön
+            Blog&apos;a Geri Dön
           </Link>
         </motion.div>
 

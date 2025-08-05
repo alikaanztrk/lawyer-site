@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Phone, Mail, Calendar, Shield, ChevronDown } from 'lucide-react';
+import { Phone, Calendar, Shield, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Button from '@/components/ui/Button';
 

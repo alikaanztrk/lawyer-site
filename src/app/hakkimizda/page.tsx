@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { Scale, Award, Users, Calendar, MapPin, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
