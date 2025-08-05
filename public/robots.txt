@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /hakkimizda
+Allow: /hizmetlerimiz
+Allow: /iletisim
+Allow: /blog
+
+# Legal pages
+Allow: /kvkk
+Allow: /gizlilik-politikasi
+Allow: /yasal-uyari
+
+# Disallow admin or private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://av.tr/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1

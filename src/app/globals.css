@@ -19,8 +19,56 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Blog content styles */
+.prose {
+  max-width: none;
+}
+
+.prose h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #334155;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+  color: #475569;
+}
+
+.prose ul {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  color: #475569;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #334155;
 }

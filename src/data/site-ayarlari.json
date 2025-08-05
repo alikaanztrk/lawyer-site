@@ -1,0 +1,68 @@
+{
+  "site": {
+    "baslik": "Av. Mehmet Özkan | Hukuk Bürosu",
+    "aciklama": "İstanbul merkezli deneyimli avukat. Ceza, medeni, ticaret ve aile hukuku alanlarında uzman hukuki danışmanlık ve dava takip hizmetleri.",
+    "anahtar_kelimeler": [
+      "avukat",
+      "hukuk bürosu", 
+      "İstanbul avukat",
+      "ceza avukatı",
+      "boşanma avukatı",
+      "ticaret hukuku",
+      "hukuki danışmanlık"
+    ],
+    "url": "https://av.tr",
+    "logo": "/images/logo.svg",
+    "favicon": "/favicon/favicon.ico",
+    "sosyal_resim": "/images/og-image.jpg"
+  },
+  "iletisim": {
+    "ana_telefon": "+90 212 123 45 67",
+    "whatsapp": "+90 533 123 45 67", 
+    "email": "info@av.tr",
+    "adres": {
+      "tam_adres": "Nişantaşı Mahallesi, Teşvikiye Caddesi No: 123/4, Şişli/İstanbul",
+      "google_maps_embed": "https://maps.google.com/embed?...",
+      "lat": 41.0527,
+      "lng": 28.9956
+    },
+    "calisma_saatleri": {
+      "pazartesi": "09:00-18:00",
+      "sali": "09:00-18:00", 
+      "carsamba": "09:00-18:00",
+      "persembe": "09:00-18:00",
+      "cuma": "09:00-18:00",
+      "cumartesi": "09:00-14:00",
+      "pazar": "Kapalı"
+    }
+  },
+  "tema": {
+    "ana_renk": "#1e3a8a",
+    "ikincil_renk": "#f59e0b",
+    "basari_rengi": "#059669",
+    "uyari_rengi": "#dc2626", 
+    "arkaplan_rengi": "#ffffff",
+    "yazi_rengi": "#0f172a"
+  },
+  "ozellikler": {
+    "ucretsiz_danisma": true,
+    "online_randevu": true,
+    "acil_durum_hatti": true,
+    "whatsapp_destek": true,
+    "taksitli_odeme": true,
+    "ev_ofis_ziyaret": true
+  },
+  "seo": {
+    "google_analytics": "G-XXXXXXXXXX",
+    "google_tag_manager": "GTM-XXXXXXX",
+    "facebook_pixel": "000000000000000",
+    "yandex_metrica": "00000000"
+  },
+  "yasal": {
+    "sirket_adi": "Mehmet Özkan Hukuk Bürosu",
+    "vergi_no": "1234567890",
+    "ticaret_sicil": "İstanbul-123456",
+    "baro_kayit": "İstanbul Barosu - 12345",
+    "kurucu": "Av. Mehmet Özkan"
+  }
+}

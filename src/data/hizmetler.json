@@ -1,0 +1,213 @@
+{
+  "hizmetler": {
+    "ceza-hukuku": {
+      "id": "ceza-hukuku",
+      "baslik": "Ceza Hukuku",
+      "kisa_aciklama": "Ceza davalarında uzman hukuki danışmanlık ve temsil hizmetleri",
+      "icon": "scales",
+      "renk": "#1e3a8a",
+      "detaylar": {
+        "aciklama": "Ceza hukuku alanında 15 yıllık deneyimimizle, suç mağdurları ve sanıklar için profesyonel hukuki destek sağlıyoruz. Soruşturma aşamasından mahkeme sürecine kadar tüm aşamalarda yanınızdayız.",
+        "alt_hizmetler": [
+          "Suç duyurusu ve şikâyet dilekçeleri",
+          "Savcılık soruşturmasında temsil",
+          "Mahkeme sürecinde müdafaa",
+          "Beraat ve hükmün düzeltilmesi talepleri",
+          "Ceza infaz hukuku",
+          "Adli tıp raporları değerlendirmesi"
+        ],
+        "yasal_alanlar": [
+          "Mala karşı suçlar",
+          "Kişiye karşı suçlar", 
+          "Ekonomik suçlar",
+          "Bilişim suçları",
+          "Trafik suçları",
+          "Aile içi şiddet"
+        ],
+        "ortalama_sure": "2-12 ay",
+        "fiyat_araligi": "2.500₺ - 15.000₺"
+      }
+    },
+    "medeni-hukuk": {
+      "id": "medeni-hukuk",
+      "baslik": "Medeni Hukuk",
+      "kisa_aciklama": "Kişisel haklar, aile hukuku ve miras davalarında uzman hizmet",
+      "icon": "user",
+      "renk": "#059669",
+      "detaylar": {
+        "aciklama": "Medeni hukuk alanında bireylerin temel hakları ve özel yaşamlarına ilişkin tüm hukuki ihtiyaçları karşılıyoruz. Kişilik hakları ihlalinden miras davalarına kadar geniş bir yelpazede hizmet veriyoruz.",
+        "alt_hizmetler": [
+          "Kişilik hakları ihlali davaları",
+          "Maddi ve manevi tazminat talepleri",
+          "Boşanma davaları",
+          "Miras hukuku ve vasiyet işlemleri",
+          "Velayet ve nafaka davaları",
+          "Mal rejimi değişikliği"
+        ],
+        "yasal_alanlar": [
+          "Kişilik hakları",
+          "Aile hukuku",
+          "Miras hukuku",
+          "Borçlar hukuku",
+          "Eşya hukuku",
+          "Sözleşme hukuku"
+        ],
+        "ortalama_sure": "1-8 ay",
+        "fiyat_araligi": "1.500₺ - 10.000₺"
+      }
+    },
+    "ticaret-hukuku": {
+      "id": "ticaret-hukuku",
+      "baslik": "Ticaret Hukuku",
+      "kisa_aciklama": "Şirket kuruluşu, ticari anlaşmazlıklar ve ticaret hukuku danışmanlığı",
+      "icon": "building",
+      "renk": "#f59e0b",
+      "detaylar": {
+        "aciklama": "Ticaret hukuku alanında şirketlerin kuruluşundan fesihine, ortaklık anlaşmazlıklarından ticari sözleşmelere kadar kapsamlı hukuki hizmetler sunuyoruz.",
+        "alt_hizmetler": [
+          "Şirket kuruluş işlemleri",
+          "Ortaklık anlaşmaları",
+          "Ticari sözleşme hazırlama",
+          "Şirket birleşme ve devralma",
+          "Ticari davalar",
+          "İflas ve konkordato işlemleri"
+        ],
+        "yasal_alanlar": [
+          "Şirketler hukuku",
+          "Ortaklık hukuku",
+          "Ticari sözleşmeler",
+          "Rekabet hukuku",
+          "İflas hukuku",
+          "Ticari tahkim"
+        ],
+        "ortalama_sure": "1-24 ay",
+        "fiyat_araligi": "3.000₺ - 25.000₺"
+      }
+    },
+    "is-hukuku": {
+      "id": "is-hukuku", 
+      "baslik": "İş Hukuku",
+      "kisa_aciklama": "İşçi ve işveren hakları, iş kazaları ve istihdam hukuku",
+      "icon": "briefcase",
+      "renk": "#dc2626",
+      "detaylar": {
+        "aciklama": "İş hukuku alanında hem işçi hem de işveren tarafı için uzman hukuki hizmetler sunuyoruz. İş sözleşmelerinden iş kazalarına kadar tüm süreçlerde yanınızdayız.",
+        "alt_hizmetler": [
+          "İş sözleşmesi hazırlama ve inceleme",
+          "Kıdem ve ihbar tazminatı davaları",
+          "İş kazası ve meslek hastalığı",
+          "Mobbing davaları",
+          "Fazla mesai alacağı",
+          "İşe iade davaları"
+        ],
+        "yasal_alanlar": [
+          "İş sözleşmeleri",
+          "İş güvenliği",
+          "Sosyal güvenlik",
+          "Toplu iş sözleşmeleri",
+          "İş mahkemesi davaları",
+          "İdari para cezaları"
+        ],
+        "ortalama_sure": "3-18 ay",
+        "fiyat_araligi": "2.000₺ - 12.000₺"
+      }
+    },
+    "gayrimenkul-hukuku": {
+      "id": "gayrimenkul-hukuku",
+      "baslik": "Gayrimenkul Hukuku", 
+      "kisa_aciklama": "Tapu işlemleri, emlak alım-satımı ve gayrimenkul anlaşmazlıkları",
+      "icon": "home",
+      "renk": "#7c3aed",
+      "detaylar": {
+        "aciklama": "Gayrimenkul hukuku alanında alım-satım işlemlerinden tapu anlaşmazlıklarına, kira hukukundan imar hukukuna kadar kapsamlı hizmetler sunuyoruz.",
+        "alt_hizmetler": [
+          "Tapu iptal ve tescil davaları",
+          "Gayrimenkul alım-satım sözleşmeleri",
+          "Kira anlaşmazlıkları",
+          "İmar ve yapı ruhsatı işlemleri",
+          "Gayrimenkul değerleme",
+          "Kamulaştırma davaları"
+        ],
+        "yasal_alanlar": [
+          "Tapu hukuku",
+          "Kira hukuku", 
+          "İmar hukuku",
+          "Arsa payı davaları",
+          "Kat mülkiyeti",
+          "Kamulaştırma"
+        ],
+        "ortalama_sure": "2-12 ay",
+        "fiyat_araligi": "2.500₺ - 18.000₺"
+      }
+    },
+    "aile-hukuku": {
+      "id": "aile-hukuku",
+      "baslik": "Aile Hukuku",
+      "kisa_aciklama": "Boşanma, velayet, nafaka ve aile içi anlaşmazlıklar",
+      "icon": "heart",
+      "renk": "#ec4899",
+      "detaylar": {
+        "aciklama": "Aile hukuku alanında hassas ve özenli yaklaşımla, aile bireylerinin haklarını koruyucu hizmetler sunuyoruz. Boşanma süreçlerinde tarafların mağdur olmaması için titizlikle çalışıyoruz.",
+        "alt_hizmetler": [
+          "Anlaşmalı ve çekişmeli boşanma",
+          "Velayet ve kişisel ilişki tesisi", 
+          "Nafaka hesaplama ve takibi",
+          "Mal paylaşımı ve değer takdiri",
+          "Evlilik öncesi sözleşmeler",
+          "Aile içi şiddet koruma"
+        ],
+        "yasal_alanlar": [
+          "Boşanma davaları",
+          "Velayet hukuku",
+          "Nafaka hukuku",
+          "Mal rejimi",
+          "Evlenme engelleri",
+          "Koruyucu tedbirler"
+        ],
+        "ortalama_sure": "3-12 ay", 
+        "fiyat_araligi": "3.000₺ - 15.000₺"
+      }
+    },
+    "icra-iflas-hukuku": {
+      "id": "icra-iflas-hukuku",
+      "baslik": "İcra İflas Hukuku",
+      "kisa_aciklama": "Alacak takibi, haciz işlemleri ve iflas süreçleri",
+      "icon": "gavel",
+      "renk": "#0891b2",
+      "detaylar": {
+        "aciklama": "İcra ve iflas hukuku alanında alacaklı ve borçlu hakları doğrultusunda etkin hukuki çözümler sunuyoruz. Tahsilat süreçlerinde en uygun yöntemleri belirleyerek müvekkillerimizin mağduriyetini önlüyoruz.",
+        "alt_hizmetler": [
+          "İcra takibi başlatma ve takip",
+          "Haciz işlemlerine itiraz",
+          "İflas davası açma",
+          "Konkordato süreçleri",
+          "Alacak temlik işlemleri",
+          "İcra inkar tazminatı"
+        ],
+        "yasal_alanlar": [
+          "İcra hukuku",
+          "İflas hukuku",
+          "Konkordato",
+          "Haciz hukuku",
+          "Alacak hukuku",
+          "Temlik işlemleri"
+        ],
+        "ortalama_sure": "1-18 ay",
+        "fiyat_araligi": "1.500₺ - 10.000₺"
+      }
+    }
+  },
+  "genel_bilgiler": {
+    "ucretsiz_danisma": "İlk görüşme ücretsizdir",
+    "randevu_sistemi": "Online randevu alabilirsiniz",
+    "acil_durum": "7/24 acil durum hattı mevcuttur",
+    "odeme_secenekleri": [
+      "Nakit",
+      "Kredi kartı",
+      "Banka havale/EFT",
+      "Taksitli ödeme"
+    ],
+    "garanti": "Hukuki hizmet kalite garantisi",
+    "gizlilik": "Müvekkil-avukat gizliliği esastır"
+  }
+}

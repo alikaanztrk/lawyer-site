@@ -1,0 +1,56 @@
+{
+  "ad_soyad": "Av. Mehmet Özkan",
+  "unvan": "Hukuk Bürosu Kurucusu",
+  "uzmanlik_alanlari": [
+    "Ceza Hukuku",
+    "Medeni Hukuk", 
+    "Ticaret Hukuku",
+    "İş Hukuku",
+    "Gayrimenkul Hukuku",
+    "Aile Hukuku",
+    "İcra İflas Hukuku"
+  ],
+  "deneyim_yili": "15+ Yıl",
+  "baro_no": "İstanbul Barosu - 12345",
+  "egitim": [
+    {
+      "derece": "Hukuk Lisans",
+      "universite": "İstanbul Üniversitesi Hukuk Fakültesi",
+      "yil": "2008"
+    },
+    {
+      "derece": "Hukuk Yüksek Lisans",
+      "universite": "Marmara Üniversitesi",
+      "yil": "2010"
+    }
+  ],
+  "sertifikalar": [
+    "Arabuluculuk Sertifikası",
+    "İcra İflas Hukuku Sertifikası",
+    "Ticaret Hukuku Uzmanlık"
+  ],
+  "profil_fotografi": "/images/avukat-profil.jpg",
+  "hakkinda": "15 yılı aşkın deneyimi ile müvekkillerine en kaliteli hukuki hizmetleri sunan deneyimli bir avukattır. İstanbul Barosu'na kayıtlı olarak, ceza hukukundan ticaret hukukuna kadar geniş bir yelpazede uzmanlaşmıştır.",
+  "felsefe": "Adalet ve hakkaniyet prensipleri doğrultusunda, müvekkillerimin haklarını en iyi şekilde korumak ve hukuki süreçlerde onlara rehberlik etmek temel misyonumdur.",
+  "iletisim": {
+    "telefon": "+90 212 123 45 67",
+    "email": "info@av.tr",
+    "whatsapp": "+90 533 123 45 67",
+    "adres": {
+      "sokak": "Nişantaşı Mahallesi, Teşvikiye Caddesi No: 123/4",
+      "ilce": "Şişli", 
+      "il": "İstanbul",
+      "posta_kodu": "34365"
+    },
+    "calisma_saatleri": {
+      "hafta_ici": "09:00 - 18:00",
+      "cumartesi": "09:00 - 14:00", 
+      "pazar": "Kapalı"
+    }
+  },
+  "sosyal_medya": {
+    "linkedin": "https://linkedin.com/in/avukat-mehmet-ozkan",
+    "twitter": "https://twitter.com/av_mehmetozkan",
+    "instagram": "https://instagram.com/avukat.mehmetozkan"
+  }
+}
