@@ -92,8 +92,9 @@ const relatedPosts = [
   { id: 5, title: 'Miras Hukuku Rehberi', category: 'Medeni Hukuk' }
 ];
 
-export default function BlogDetailPage({ params }: { params: { id: string } }) {
-  const post = blogPosts[parseInt(params.id) as keyof typeof blogPosts];
+export default async function BlogDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const post = blogPosts[parseInt(id) as keyof typeof blogPosts];
   
   if (!post) {
     notFound();
