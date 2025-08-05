@@ -12,7 +12,7 @@ export default function Footer() {
               <span className="text-amber-400">Av.</span> Işıl Akpınar
             </div>
             <p className="text-gray-300 mb-4">
-              15 yılı aşkın deneyimi ile müvekkillerine en kaliteli hukuki hizmetleri sunan deneyimli avukat.
+              5 yılı aşkın deneyimi ile müvekkillerine en kaliteli hukuki hizmetleri sunan deneyimli avukat.
             </p>
             <div className="flex space-x-4">
               <a href="https://linkedin.com" className="text-gray-300 hover:text-amber-400 transition-colors">

@@ -42,14 +42,14 @@ export default function RandevuPage() {
                   whileFocus={{ scale: 1.02 }}
                   type="text"
                   placeholder="Adınız Soyadınız *"
-                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white placeholder-slate-500"
                   required
                 />
                 <motion.input
                   whileFocus={{ scale: 1.02 }}
                   type="tel"
                   placeholder="Telefon Numaranız *"
-                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white placeholder-slate-500"
                   required
                 />
               </div>
@@ -58,17 +58,17 @@ export default function RandevuPage() {
                 whileFocus={{ scale: 1.02 }}
                 type="email"
                 placeholder="E-posta Adresiniz *"
-                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white placeholder-slate-500"
                 required
               />
 
               {/* Hukuk Alanı */}
-              <motion.select 
-                whileFocus={{ scale: 1.02 }}
-                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
-                required
-              >
-                <option value="">Hukuk Alanı Seçiniz *</option>
+                              <motion.select 
+                  whileFocus={{ scale: 1.02 }}
+                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
+                  required
+                >
+                  <option value="" className="text-slate-900">Hukuk Alanı Seçiniz *</option>
                 <option value="ceza">Ceza Hukuku</option>
                 <option value="medeni">Medeni Hukuk</option>
                 <option value="ticaret">Ticaret Hukuku</option>
@@ -83,36 +83,36 @@ export default function RandevuPage() {
                 <motion.input
                   whileFocus={{ scale: 1.02 }}
                   type="date"
-                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
                   min={new Date().toISOString().split('T')[0]}
                   required
                 />
                 <motion.select 
                   whileFocus={{ scale: 1.02 }}
-                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
                   required
                 >
-                  <option value="">Saat Seçiniz *</option>
-                  <option value="09:00">09:00</option>
-                  <option value="10:00">10:00</option>
-                  <option value="11:00">11:00</option>
-                  <option value="14:00">14:00</option>
-                  <option value="15:00">15:00</option>
-                  <option value="16:00">16:00</option>
-                  <option value="17:00">17:00</option>
+                  <option value="" className="text-slate-900">Saat Seçiniz *</option>
+                  <option value="09:00" className="text-slate-900">09:00</option>
+                  <option value="10:00" className="text-slate-900">10:00</option>
+                  <option value="11:00" className="text-slate-900">11:00</option>
+                  <option value="14:00" className="text-slate-900">14:00</option>
+                  <option value="15:00" className="text-slate-900">15:00</option>
+                  <option value="16:00" className="text-slate-900">16:00</option>
+                  <option value="17:00" className="text-slate-900">17:00</option>
                 </motion.select>
               </div>
 
               {/* Görüşme Türü */}
               <motion.select 
                 whileFocus={{ scale: 1.02 }}
-                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
                 required
               >
-                <option value="">Görüşme Türü Seçiniz *</option>
-                <option value="yuz-yuze">Yüz Yüze Görüşme (Ofiste)</option>
-                <option value="video">Video Görüşme (Online)</option>
-                <option value="telefon">Telefon Görüşmesi</option>
+                <option value="" className="text-slate-900">Görüşme Türü Seçiniz *</option>
+                <option value="yuz-yuze" className="text-slate-900">Yüz Yüze Görüşme (Ofiste)</option>
+                <option value="video" className="text-slate-900">Video Görüşme (Online)</option>
+                <option value="telefon" className="text-slate-900">Telefon Görüşmesi</option>
               </motion.select>
 
               {/* Durum Açıklaması */}
@@ -120,19 +120,19 @@ export default function RandevuPage() {
                 whileFocus={{ scale: 1.02 }}
                 placeholder="Hukuki durumunuzu kısaca açıklayın... *"
                 rows={4}
-                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all resize-none text-slate-900 bg-white placeholder-slate-500"
                 required
               />
 
               {/* Aciliyet */}
               <motion.select 
                 whileFocus={{ scale: 1.02 }}
-                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
               >
-                <option value="">Aciliyet Durumu</option>
-                <option value="cok-acil">Çok Acil (24 saat içinde)</option>
-                <option value="acil">Acil (2-3 gün içinde)</option>
-                <option value="normal">Normal (1 hafta içinde)</option>
+                <option value="" className="text-slate-900">Aciliyet Durumu</option>
+                <option value="cok-acil" className="text-slate-900">Çok Acil (24 saat içinde)</option>
+                <option value="acil" className="text-slate-900">Acil (2-3 gün içinde)</option>
+                <option value="normal" className="text-slate-900">Normal (1 hafta içinde)</option>
               </motion.select>
 
               {/* KVKK */}

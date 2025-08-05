@@ -10,18 +10,18 @@
     "Aile Hukuku",
     "İcra İflas Hukuku"
   ],
-  "deneyim_yili": "15+ Yıl",
+  "deneyim_yili": "5+ Yıl",
   "baro_no": "İstanbul Barosu - 12345",
   "egitim": [
     {
       "derece": "Hukuk Lisans",
-      "universite": "İstanbul Üniversitesi Hukuk Fakültesi",
-      "yil": "2008"
+      "universite": "Galatasaray Üniversitesi Hukuk Fakültesi",
+      "yil": "2019"
     },
     {
       "derece": "Hukuk Yüksek Lisans",
-      "universite": "Marmara Üniversitesi",
-      "yil": "2010"
+      "universite": "Koç Üniversitesi Sosyal Bilimler Enstitüsü",
+      "yil": "2021"
     }
   ],
   "sertifikalar": [
@@ -30,7 +30,7 @@
     "Ticaret Hukuku Uzmanlık"
   ],
   "profil_fotografi": "/images/avukat-profil.jpg",
-  "hakkinda": "15 yılı aşkın deneyimi ile müvekkillerine en kaliteli hukuki hizmetleri sunan deneyimli bir avukattır. İstanbul Barosu'na kayıtlı olarak, ceza hukukundan ticaret hukukuna kadar geniş bir yelpazede uzmanlaşmıştır.",
+  "hakkinda": "5 yılı aşkın deneyimi ile müvekkillerine en kaliteli hukuki hizmetleri sunan deneyimli bir avukattır. İstanbul Barosu'na kayıtlı olarak, ceza hukukundan ticaret hukukuna kadar geniş bir yelpazede uzmanlaşmıştır.",
   "felsefe": "Adalet ve hakkaniyet prensipleri doğrultusunda, müvekkillerimin haklarını en iyi şekilde korumak ve hukuki süreçlerde onlara rehberlik etmek temel misyonumdur.",
   "iletisim": {
     "telefon": "+90 212 123 45 67",
@@ -52,5 +52,11 @@
     "linkedin": "https://linkedin.com/in/avukat-isil-akpinar",
     "twitter": "https://twitter.com/av_isilakpinar",
     "instagram": "https://instagram.com/avukat.isilakpinar"
+  },
+  "istatistikler": {
+    "basarili_dava": "xxx",
+    "basari_orani": "90%",
+    "mutlu_muvekki": "xxxx+",
+    "aktif_dava": "45+"
   }
 }

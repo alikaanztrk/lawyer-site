@@ -48,8 +48,8 @@ export default function HakkimizdaPage() {
               Deneyim ve Uzmanlık
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              2008 yılından bu yana hukuk alanında aktif olarak çalışmakta olan Av. Işıl Akpınar, 
-              İstanbul Üniversitesi Hukuk Fakültesi mezunu olup, 15 yılı aşkın deneyimi ile 
+              2019 yılından bu yana hukuk alanında aktif olarak çalışmakta olan Av. Işıl Akpınar, 
+              Galatasaray Üniversitesi Hukuk Fakültesi mezunu olup, 5 yılı aşkın deneyimi ile 
               müvekkillerine en kaliteli hukuki hizmetleri sunmaktadır.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
@@ -96,14 +96,14 @@ export default function HakkimizdaPage() {
                 className="border-l-4 border-slate-300 pl-8 py-4 bg-slate-50 rounded-r-2xl"
               >
                 <h4 className="font-bold text-slate-900 text-lg">Hukuk Yüksek Lisans</h4>
-                <p className="text-slate-600">Marmara Üniversitesi - 2010</p>
+                <p className="text-slate-600">Koç Üniversitesi Sosyal Bilimler Enstitüsü - 2021</p>
               </motion.div>
               <motion.div 
                 whileHover={{ x: 4 }}
                 className="border-l-4 border-slate-300 pl-8 py-4 bg-slate-50 rounded-r-2xl"
               >
                 <h4 className="font-bold text-slate-900 text-lg">Hukuk Lisans</h4>
-                <p className="text-slate-600">İstanbul Üniversitesi Hukuk Fakültesi - 2008</p>
+                <p className="text-slate-600">Galatasaray Üniversitesi Hukuk Fakültesi - 2019</p>
               </motion.div>
             </div>
           </div>
@@ -132,6 +132,63 @@ export default function HakkimizdaPage() {
                   <span className="text-slate-700">{item}</span>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Başarı İstatistikleri */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="bg-slate-900 text-white py-20 rounded-3xl mb-20"
+        >
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold mb-4">
+                Başarı İstatistikleri
+              </h2>
+              <p className="text-xl text-slate-300">
+                Müvekkillerimize sunduğumuz hizmetlerin sonuçları
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-amber-400 mb-2">
+                  xxx
+                </div>
+                <div className="text-lg text-slate-300">
+                  Başarılı Dava
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-4xl font-bold text-amber-400 mb-2">
+                  90%
+                </div>
+                <div className="text-lg text-slate-300">
+                  Başarı Oranı
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-4xl font-bold text-amber-400 mb-2">
+                  150+
+                </div>
+                <div className="text-lg text-slate-300">
+                  Mutlu Müvekkil
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="text-4xl font-bold text-amber-400 mb-2">
+                  45+
+                </div>
+                <div className="text-lg text-slate-300">
+                  Aktif Dava
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
