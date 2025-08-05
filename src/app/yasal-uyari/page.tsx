@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Yasal Uyarı | Av. Mehmet Özkan',
+  title: 'Yasal Uyarı | Av. Işıl Akpınar',
   description: 'Web sitesi kullanım şartları, sorumluluklar ve yasal uyarılar hakkında önemli bilgiler.',
 };
 
@@ -29,8 +29,8 @@ export default function YasalUyariPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Site Sahibi ve İletişim Bilgileri</h2>
             <div className="bg-gray-50 p-6 rounded-lg">
               <ul className="space-y-2 text-gray-700">
-                <li><strong>Site Sahibi:</strong> Av. Mehmet Özkan</li>
-                <li><strong>Ticari Unvan:</strong> Mehmet Özkan Hukuk Bürosu</li>
+                <li><strong>Site Sahibi:</strong> Av. Işıl Akpınar</li>
+                <li><strong>Ticari Unvan:</strong> Işıl Akpınar Hukuk Bürosu</li>
                 <li><strong>Adres:</strong> Nişantaşı Mahallesi, Teşvikiye Caddesi No: 123/4, Şişli/İstanbul</li>
                 <li><strong>Telefon:</strong> +90 212 123 45 67</li>
                 <li><strong>E-posta:</strong> info@av.tr</li>
@@ -43,7 +43,7 @@ export default function YasalUyariPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Web Sitesinin Amacı</h2>
             <p className="text-gray-700 leading-relaxed">
-              Bu web sitesi, Av. Mehmet Özkan&apos;ın sunduğu avukatlık hizmetleri hakkında bilgi vermek, 
+              Bu web sitesi, Av. Işıl Akpınar&apos;ın sunduğu avukatlık hizmetleri hakkında bilgi vermek, 
               hukuki danışmanlık talepleri almak ve müvekkiller ile iletişimi sağlamak amacıyla oluşturulmuştur. 
               Site üzerinden verilen bilgiler genel nitelikte olup, özel durumlar için mutlaka birebir görüşme yapılmalıdır.
             </p>

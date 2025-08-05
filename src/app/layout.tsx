@@ -16,12 +16,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Av. Mehmet Özkan | Hukuk Bürosu - İstanbul",
+  title: "Av. Işıl Akpınar | Hukuk Bürosu - İstanbul",
   description: "İstanbul merkezli deneyimli avukat. Ceza, medeni, ticaret ve aile hukuku alanlarında uzman hukuki danışmanlık ve dava takip hizmetleri. Ücretsiz ilk görüşme.",
   keywords: ["avukat", "hukuk bürosu", "İstanbul avukat", "ceza avukatı", "boşanma avukatı", "ticaret hukuku", "hukuki danışmanlık"],
-  authors: [{ name: "Av. Mehmet Özkan" }],
-  creator: "Av. Mehmet Özkan",
-  publisher: "Mehmet Özkan Hukuk Bürosu",
+  authors: [{ name: "Av. Işıl Akpınar" }],
+  creator: "Av. Işıl Akpınar",
+  publisher: "Işıl Akpınar Hukuk Bürosu",
   robots: {
     index: true,
     follow: true,
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'tr_TR',
     url: 'https://av.tr',
-    title: 'Av. Mehmet Özkan | Hukuk Bürosu - İstanbul',
+    title: 'Av. Işıl Akpınar | Hukuk Bürosu - İstanbul',
     description: 'İstanbul merkezli deneyimli avukat. Ceza, medeni, ticaret ve aile hukuku alanlarında uzman hukuki danışmanlık ve dava takip hizmetleri.',
-    siteName: 'Av. Mehmet Özkan Hukuk Bürosu',
+    siteName: 'Av. Işıl Akpınar Hukuk Bürosu',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Av. Mehmet Özkan | Hukuk Bürosu - İstanbul',
+    title: 'Av. Işıl Akpınar | Hukuk Bürosu - İstanbul',
     description: 'İstanbul merkezli deneyimli avukat. Ceza, medeni, ticaret ve aile hukuku alanlarında uzman hukuki danışmanlık ve dava takip hizmetleri.',
   },
   verification: {

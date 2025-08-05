@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Firma Bilgileri */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span className="text-amber-400">Av.</span> Mehmet Özkan
+              <span className="text-amber-400">Av.</span> Işıl Akpınar
             </div>
             <p className="text-gray-300 mb-4">
               15 yılı aşkın deneyimi ile müvekkillerine en kaliteli hukuki hizmetleri sunan deneyimli avukat.
@@ -93,7 +93,8 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-300 text-sm">
-              © 2024 Av. Mehmet Özkan Hukuk Bürosu. Tüm hakları saklıdır.
+              © 2024 Av. Işıl Akpınar Hukuk Bürosu. Tüm hakları saklıdır.
+              Made By Ali Kaan Öztürk
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/gizlilik-politikasi" className="text-gray-300 hover:text-amber-400 text-sm transition-colors">

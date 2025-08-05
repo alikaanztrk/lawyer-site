@@ -1,6 +1,6 @@
 {
   "site": {
-    "baslik": "Av. Mehmet Özkan | Hukuk Bürosu",
+    "baslik": "Av. Işıl Akpınar | Hukuk Bürosu",
     "aciklama": "İstanbul merkezli deneyimli avukat. Ceza, medeni, ticaret ve aile hukuku alanlarında uzman hukuki danışmanlık ve dava takip hizmetleri.",
     "anahtar_kelimeler": [
       "avukat",
@@ -59,10 +59,10 @@
     "yandex_metrica": "00000000"
   },
   "yasal": {
-    "sirket_adi": "Mehmet Özkan Hukuk Bürosu",
+    "sirket_adi": "Işıl Akpınar Hukuk Bürosu",
     "vergi_no": "1234567890",
     "ticaret_sicil": "İstanbul-123456",
     "baro_kayit": "İstanbul Barosu - 12345",
-    "kurucu": "Av. Mehmet Özkan"
+    "kurucu": "Av. Işıl Akpınar"
   }
 }

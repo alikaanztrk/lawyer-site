@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'KVKK Aydınlatma Metni | Av. Mehmet Özkan',
+  title: 'KVKK Aydınlatma Metni | Av. Işıl Akpınar',
   description: 'Kişisel Verilerin Korunması Kanunu kapsamında kişisel verilerinizin işlenmesi hakkında aydınlatma metni.',
 };
 
@@ -29,7 +29,7 @@ export default function KVKKPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Veri Sorumlusu</h2>
             <p className="text-gray-700 leading-relaxed">
               6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) uyarınca, kişisel verileriniz; 
-              veri sorumlusu olarak <strong>Av. Mehmet Özkan Hukuk Bürosu</strong> (Nişantaşı Mahallesi, 
+              veri sorumlusu olarak <strong>Av. Işıl Akpınar Hukuk Bürosu</strong> (Nişantaşı Mahallesi, 
               Teşvikiye Caddesi No: 123/4, Şişli/İstanbul) tarafından aşağıda açıklanan kapsamda işlenebilecektir.
             </p>
           </section>

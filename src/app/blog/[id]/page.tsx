@@ -44,7 +44,7 @@ const blogPosts = {
       <h2>Sonuç</h2>
       <p>Ceza davası süreci karmaşık ve uzun bir süreçtir. Bu süreçte doğru hukuki yönlendirme almak, hem adil yargılanma hakkınızı kullanmanız hem de en iyi sonuca ulaşmanız için elzemdir.</p>
     `,
-    author: 'Av. Mehmet Özkan',
+    author: 'Av. Işıl Akpınar',
     date: '2024-01-15',
     readTime: '8 dk',
     category: 'Ceza Hukuku',
@@ -78,7 +78,7 @@ const blogPosts = {
       <h2>Boşanma Sürecinde Dikkat Edilecekler</h2>
       <p>Boşanma süreci sadece evliliğin sona ermesi değil, aynı zamanda mal paylaşımı, nafaka, velayet gibi önemli konuları da içerir. Bu konularda doğru kararlar alabilmek için uzman hukuki destek almak gereklidir.</p>
     `,
-    author: 'Av. Mehmet Özkan',
+    author: 'Av. Işıl Akpınar',
     date: '2024-01-10',
     readTime: '6 dk',
     category: 'Aile Hukuku',

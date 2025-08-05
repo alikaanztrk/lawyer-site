@@ -37,7 +37,7 @@ export default function HakkimizdaPage() {
                 <Scale className="w-24 h-24 text-white" />
               </div>
               <div className="text-center">
-                <h2 className="text-3xl font-bold mb-3">Av. Mehmet Özkan</h2>
+                <h2 className="text-3xl font-bold mb-3">Av. Işıl Akpınar</h2>
                 <p className="text-slate-200">Hukuk Bürosu Kurucusu</p>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function HakkimizdaPage() {
               Deneyim ve Uzmanlık
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              2008 yılından bu yana hukuk alanında aktif olarak çalışmakta olan Av. Mehmet Özkan, 
+              2008 yılından bu yana hukuk alanında aktif olarak çalışmakta olan Av. Işıl Akpınar, 
               İstanbul Üniversitesi Hukuk Fakültesi mezunu olup, 15 yılı aşkın deneyimi ile 
               müvekkillerine en kaliteli hukuki hizmetleri sunmaktadır.
             </p>
