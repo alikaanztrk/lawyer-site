@@ -3,7 +3,6 @@ import { Resend } from 'resend';
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const subscribersFile = join(process.cwd(), 'data', 'subscribers.json');
 
 // Veritabanı helper fonksiyonları
@@ -103,6 +102,9 @@ export async function POST(request: NextRequest) {
     if (!saved) {
       throw new Error('Veriler kaydedilemedi');
     }
+
+    // Resend client'ı burada initialize et
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // Hoşgeldin e-postası gönder
     const welcomeHtml = `
