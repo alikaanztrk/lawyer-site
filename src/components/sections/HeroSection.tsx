@@ -64,7 +64,7 @@ export default function HeroSection() {
               style={{ transform: 'perspective(1000px)' }}
             >
               <Shield className="w-4 h-4 mr-2" />
-              5+ Yıl Deneyim • İstanbul
+              Uzman Hukuki Danışmanlık • İstanbul
             </motion.div>
             
             <motion.h1 
@@ -79,7 +79,7 @@ export default function HeroSection() {
             >
               Hukuki Haklarınızı 
               <br />
-              <span className="text-amber-400 drop-shadow-lg"> Profesyonelce </span>
+              <span className="text-emerald-400 drop-shadow-lg"> Profesyonelce </span>
               <br />
               Koruyoruz
             </motion.h1>
@@ -109,7 +109,7 @@ export default function HeroSection() {
                 whileTap={{ scale: 0.95 }}
                 style={{ transform: 'perspective(1000px)' }}
               >
-                <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full transition-all duration-300 shadow-xl border-0">
+                <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-full transition-all duration-300 shadow-xl border-0">
                   <Calendar className="w-5 h-5 mr-2" />
                   Randevu Talep Et
                 </Button>
@@ -129,39 +129,28 @@ export default function HeroSection() {
             </a>
           </motion.div>
 
-          {/* İstatistikler - 3D Cards */}
+          {/* Profesyonel Motto */}
           <motion.div 
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="grid grid-cols-3 gap-8 pt-12 max-w-md mx-auto"
+            className="text-center pt-8"
           >
-            {[
-              { value: "xxx", label: "Başarılı Dava" },
-              { value: "5+", label: "Yıl Deneyim" },
-              { value: "90%", label: "Başarı Oranı" }
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, rotateY: 45 }}
-                animate={{ opacity: 1, rotateY: 0 }}
-                transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
-                whileHover={{ 
-                  scale: 1.1, 
-                  rotateY: 10,
-                  rotateX: -5,
-                }}
-                className="text-center p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 shadow-xl"
-                style={{ transform: 'perspective(1000px)' }}
-              >
-                <div className="text-3xl font-bold text-amber-400 drop-shadow-lg">
-                  {stat.value}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
+              className="inline-flex items-center px-8 py-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg"
+            >
+              <div className="text-center">
+                <div className="text-lg font-medium text-emerald-400 mb-1">
+                  "Adalet, güçlünün zayıfa karşı sorumluluğudur"
                 </div>
-                <div className="text-sm text-white/90 mt-1">
-                  {stat.label}
+                <div className="text-sm text-white/70">
+                  - Av. Işıl Bengisu Akpınar
                 </div>
-              </motion.div>
-            ))}
+              </div>
+            </motion.div>
           </motion.div>
         </div>
         

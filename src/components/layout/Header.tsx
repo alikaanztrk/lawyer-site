@@ -121,7 +121,7 @@ export default function Header() {
             >
               <Link
                 href="/randevu"
-                className="bg-amber-500 text-white px-6 py-3 rounded-full font-medium hover:bg-amber-600 transition-all duration-300 shadow-lg flex items-center"
+                className="bg-emerald-500 text-white px-6 py-3 rounded-full font-medium hover:bg-emerald-600 transition-all duration-300 shadow-lg flex items-center"
               >
                 <Calendar className="w-4 h-4 mr-2" />
                 Randevu Al
@@ -154,7 +154,7 @@ export default function Header() {
               ))}
               <Link
                 href="/randevu"
-                className="bg-amber-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-amber-600 transition-colors text-center flex items-center justify-center"
+                className="bg-emerald-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-emerald-600 transition-colors text-center flex items-center justify-center"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Calendar className="w-4 h-4 mr-2" />
