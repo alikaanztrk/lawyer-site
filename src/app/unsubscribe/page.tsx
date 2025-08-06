@@ -1,12 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { CheckCircle, Mail, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-export default function UnsubscribePage() {
+function UnsubscribeContent() {
   const [isLoading, setIsLoading] = useState(true);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState('');
@@ -32,7 +32,7 @@ export default function UnsubscribePage() {
         } else {
           setError('Abonelik çıkma işlemi başarısız');
         }
-      } catch (err) {
+      } catch {
         setError('Bir hata oluştu');
       } finally {
         setIsLoading(false);
@@ -108,7 +108,7 @@ export default function UnsubscribePage() {
                   className="inline-flex items-center px-6 py-3 bg-slate-900 text-white rounded-xl hover:bg-slate-800 transition-colors"
                 >
                   <ArrowLeft className="w-4 h-4 mr-2" />
-                  Blog'a Dön
+                  Blog&apos;a Dön
                 </Link>
                 <div>
                   <p className="text-slate-500 text-sm">
@@ -153,5 +153,24 @@ export default function UnsubscribePage() {
         </motion.div>
       </div>
     </div>
+  );
+}
+
+function LoadingFallback() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
+      <div className="text-center">
+        <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-slate-900"></div>
+        <p className="mt-4 text-slate-600">Yükleniyor...</p>
+      </div>
+    </div>
+  );
+}
+
+export default function UnsubscribePage() {
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <UnsubscribeContent />
+    </Suspense>
   );
 }

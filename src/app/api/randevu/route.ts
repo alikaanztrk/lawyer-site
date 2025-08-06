@@ -7,7 +7,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { ad, telefon, email, hukukAlani, tarih, saat, gorusmeTuru, durum, aciliyet, kvkk } = body;
+    const { ad, telefon, email, hukukAlani, tarih, saat, gorusmeTuru, durum, aciliyet } = body;
 
     // Form verilerini doğrula
     if (!ad || !telefon || !email || !hukukAlani || !tarih || !saat || !gorusmeTuru || !durum) {

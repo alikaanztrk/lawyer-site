@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, Phone, Mail, CheckCircle, Send, Loader } from 'lucide-react';
+import { Clock, Phone, Mail, CheckCircle, Send, Loader } from 'lucide-react';
 
 export default function RandevuPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);

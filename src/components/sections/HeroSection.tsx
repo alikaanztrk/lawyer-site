@@ -144,7 +144,7 @@ export default function HeroSection() {
             >
               <div className="text-center">
                 <div className="text-lg font-medium text-emerald-400 mb-1">
-                  "Adalet, güçlünün zayıfa karşı sorumluluğudur"
+                  &ldquo;Adalet, güçlünün zayıfa karşı sorumluluğudur&rdquo;
                 </div>
                 <div className="text-sm text-white/70">
                   - Av. Işıl Bengisu Akpınar

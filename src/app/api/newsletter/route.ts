@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -13,7 +13,7 @@ function getSubscribers() {
       // Klasör yoksa oluştur
       const dataDir = join(process.cwd(), 'data');
       if (!existsSync(dataDir)) {
-        require('fs').mkdirSync(dataDir, { recursive: true });
+        mkdirSync(dataDir, { recursive: true });
       }
       writeFileSync(subscribersFile, JSON.stringify({ subscribers: [] }, null, 2));
       return { subscribers: [] };
@@ -26,7 +26,7 @@ function getSubscribers() {
   }
 }
 
-function saveSubscribers(data: any) {
+function saveSubscribers(data: { subscribers: Array<{ id: string; email: string; isActive: boolean; [key: string]: unknown }> }) {
   try {
     writeFileSync(subscribersFile, JSON.stringify(data, null, 2));
     return true;
@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
     const data = getSubscribers();
     
     // Zaten abone olup olmadığını kontrol et
-    const existingSubscriber = data.subscribers.find((sub: any) => sub.email === email);
+    const existingSubscriber = data.subscribers.find((sub: { email: string; isActive: boolean; [key: string]: unknown }) => sub.email === email);
     if (existingSubscriber && existingSubscriber.isActive) {
       return NextResponse.json(
         { error: 'Bu e-posta adresi zaten kayıtlı' },
@@ -221,7 +221,7 @@ export async function POST(request: NextRequest) {
       <p><strong>E-posta:</strong> ${email}</p>
       <p><strong>Kaynak:</strong> ${source}</p>
       <p><strong>Tarih:</strong> ${new Date().toLocaleString('tr-TR')}</p>
-      <p><strong>Toplam Abone:</strong> ${data.subscribers.filter((s: any) => s.isActive).length}</p>
+      <p><strong>Toplam Abone:</strong> ${data.subscribers.filter((s: { isActive: boolean }) => s.isActive).length}</p>
     `;
 
     await resend.emails.send({
@@ -234,7 +234,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ 
       success: true, 
       message: 'Başarıyla abone oldunuz! E-postanızı kontrol edin.',
-      subscriberCount: data.subscribers.filter((s: any) => s.isActive).length
+      subscriberCount: data.subscribers.filter((s: { isActive: boolean }) => s.isActive).length
     });
 
   } catch (error) {
@@ -261,7 +261,7 @@ export async function DELETE(request: NextRequest) {
     }
 
     const data = getSubscribers();
-    const subscriberIndex = data.subscribers.findIndex((sub: any) => 
+    const subscriberIndex = data.subscribers.findIndex((sub: { unsubscribeToken?: string; email: string; [key: string]: unknown }) => 
       (token && sub.unsubscribeToken === token) || 
       (email && sub.email === email)
     );

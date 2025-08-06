@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Scale, Award, Users, Calendar, MapPin, Phone } from 'lucide-react';
+import { Scale, Calendar, MapPin, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function HakkimizdaPage() {
@@ -304,7 +304,7 @@ export default function HakkimizdaPage() {
               className="mt-16"
             >
               <p className="text-lg text-slate-400 italic">
-                "Adalet, güçlünün zayıfa karşı sorumluluğudur"
+                &ldquo;Adalet, güçlünün zayıfa karşı sorumluluğudur&rdquo;
               </p>
             </motion.div>
           </div>
