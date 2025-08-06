@@ -83,14 +83,356 @@ const blogPosts = {
     readTime: '6 dk',
     category: 'Aile Hukuku',
     tags: ['boşanma', 'aile hukuku', 'dava süreci']
+  },
+  3: {
+    id: 3,
+    title: 'İş Yerinde Mobbing: Hukuki Haklarınız',
+    excerpt: 'İş yerinde mobbing yaşayanların hukuki hakları ve başvuru yolları hakkında bilmeniz gerekenler.',
+    content: `
+      <h2>Mobbing Nedir?</h2>
+      <p>Mobbing, iş yerinde sistematik olarak uygulanan psikolojik taciz, zorbalık ve dışlama davranışlarıdır. Bu davranışlar çalışanın iş performansını, ruh sağlığını ve yaşam kalitesini olumsuz etkiler.</p>
+      
+      <h2>Mobbing Türleri</h2>
+      <ul>
+        <li>Dikey mobbing (üst-alt ilişkisi)</li>
+        <li>Yatay mobbing (eşit seviyedeki çalışanlar arası)</li>
+        <li>Stratejik mobbing (işten çıkarma amaçlı)</li>
+      </ul>
+      
+      <h2>Hukuki Haklarınız</h2>
+      <p>İş yerinde mobbing yaşayan çalışanların başvurabileceği hukuki yollar:</p>
+      <ul>
+        <li>İş mahkemesinde tazminat davası açma</li>
+        <li>Ceza mahkemesinde şikayette bulunma</li>
+        <li>İş Teftiş Kuruluna başvuru</li>
+        <li>İnsan Hakları Kurumuna başvuru</li>
+      </ul>
+      
+      <h2>Delil Toplama</h2>
+      <p>Mobbing davalarında delil toplama kritik önemdedir. E-postalar, mesajlar, tanık ifadeleri ve tıbbi raporlar önemli delillerdir.</p>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2024-01-05',
+    readTime: '7 dk',
+    category: 'İş Hukuku',
+    tags: ['mobbing', 'iş hukuku', 'çalışan hakları']
+  },
+  4: {
+    id: 4,
+    title: 'Gayrimenkul Alım Satım Sözleşmesi Nelere Dikkat Etmeli',
+    excerpt: 'Gayrimenkul alım satım işlemlerinde dikkat edilmesi gereken hukuki noktalar ve güvenli alışveriş.',
+    content: `
+      <h2>Gayrimenkul Alım Satımında Dikkat Edilecek Noktalar</h2>
+      <p>Gayrimenkul yatırımı büyük bir karardır ve doğru adımlar atılmazsa ciddi sorunlar yaşanabilir.</p>
+      
+      <h2>Ön İnceleme</h2>
+      <ul>
+        <li>Tapu siciline kayıtlı bilgilerin kontrol edilmesi</li>
+        <li>İmar durumunun araştırılması</li>
+        <li>Borç ve rehin durumunun tespiti</li>
+        <li>Yapı kullanma izni kontrolü</li>
+      </ul>
+      
+      <h2>Sözleşme Aşaması</h2>
+      <p>Alım satım sözleşmesinde bulunması gereken temel unsurlar:</p>
+      <ul>
+        <li>Tarafların kimlik bilgileri</li>
+        <li>Gayrimenkulün tanımı ve özellikleri</li>
+        <li>Satış bedeli ve ödeme şekli</li>
+        <li>Teslim tarihi ve şartları</li>
+        <li>Cayma koşulları</li>
+      </ul>
+      
+      <h2>Tapu Devri</h2>
+      <p>Tapu devir işleminde gerekli belgeler ve prosedürler hakkında detaylı bilgi.</p>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2023-12-28',
+    readTime: '5 dk',
+    category: 'Gayrimenkul Hukuku',
+    tags: ['gayrimenkul', 'alım satım', 'sözleşme']
+  },
+  5: {
+    id: 5,
+    title: 'Miras Hukuku Rehberi: Mirasçılık ve Vasiyetname',
+    excerpt: 'Miras hukuku kapsamında mirasçılık hakları, vasiyetname düzenleme ve miras paylaşımı.',
+    content: `
+      <h2>Miras Hukuku Temelleri</h2>
+      <p>Miras hukuku, kişinin ölümüyle birlikte mal varlığının mirasçılara geçişini düzenleyen hukuk dalıdır.</p>
+      
+      <h2>Yasal Mirasçılar</h2>
+      <p>Türk Medeni Kanunu'na göre yasal mirasçılar:</p>
+      <ol>
+        <li>Altsoy (çocuklar, torunlar)</li>
+        <li>Ana-baba ve kardeşler</li>
+        <li>Büyük ana-baba</li>
+        <li>Eş</li>
+      </ol>
+      
+      <h2>Vasiyetname</h2>
+      <p>Vasiyetname türleri ve geçerlilik şartları:</p>
+      <ul>
+        <li>El yazısı vasiyetname</li>
+        <li>Resmi vasiyetname</li>
+        <li>Sözlü vasiyetname</li>
+      </ul>
+      
+      <h2>Saklı Pay</h2>
+      <p>Belirli mirasçıların hukuki olarak korunan asgari miras payları ve saklı pay davalarının açılması.</p>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2023-12-20',
+    readTime: '9 dk',
+    category: 'Medeni Hukuk',
+    tags: ['miras', 'vasiyetname', 'mirasçılık']
+  },
+  6: {
+    id: 6,
+    title: 'Şirket Kuruluş Sürecinde Hukuki Adımlar',
+    excerpt: 'Şirket kuruluş sürecinde atılması gereken hukuki adımlar ve gerekli belgeler hakkında rehber.',
+    content: `
+      <h2>Şirket Türleri</h2>
+      <p>Türkiye'de kurulabilecek temel şirket türleri ve özellikleri.</p>
+      
+      <h2>Anonim Şirket</h2>
+      <ul>
+        <li>Minimum sermaye: 50.000 TL</li>
+        <li>Pay senetleri ile temsil edilir</li>
+        <li>Ortaklar sadece sermaye payları ile sorumlu</li>
+      </ul>
+      
+      <h2>Limited Şirket</h2>
+      <ul>
+        <li>Minimum sermaye: 10.000 TL</li>
+        <li>Esas sözleşme ile kurulur</li>
+        <li>Daha esnek yönetim yapısı</li>
+      </ul>
+      
+      <h2>Kuruluş Aşamaları</h2>
+      <ol>
+        <li>Esas sözleşme hazırlanması</li>
+        <li>Sermayenin yatırılması</li>
+        <li>Ticaret sicili tescili</li>
+        <li>Vergi dairesine bildirim</li>
+      </ol>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2023-12-15',
+    readTime: '6 dk',
+    category: 'Ticaret Hukuku',
+    tags: ['şirket kuruluşu', 'ticaret hukuku', 'girişimcilik']
+  },
+  7: {
+    id: 7,
+    title: 'Sigorta Tazminatı Nasıl Alınır? Red Durumunda Ne Yapmalı?',
+    excerpt: 'Sigorta şirketlerinden tazminat alma süreci, red durumlarında hukuki haklarınız ve başvuru yolları.',
+    content: `
+      <h2>Sigorta Tazminat Süreci</h2>
+      <p>Sigorta tazminatı alma sürecinde izlenmesi gereken adımlar ve dikkat edilecek noktalar.</p>
+      
+      <h2>Hasar Bildirimi</h2>
+      <ul>
+        <li>Hasarın derhal bildirilmesi</li>
+        <li>Gerekli belgelerin toplanması</li>
+        <li>Ekspertiz raporu hazırlanması</li>
+      </ul>
+      
+      <h2>Tazminat Reddi Durumları</h2>
+      <p>Sigorta şirketinin tazminatı reddedebileceği yasal durumlar:</p>
+      <ul>
+        <li>Kasıtlı hasar</li>
+        <li>Prim borcunun bulunması</li>
+        <li>Bildirim süresinin aşılması</li>
+        <li>Sözleşme şartlarına aykırılık</li>
+      </ul>
+      
+      <h2>Hukuki Başvuru Yolları</h2>
+      <p>Tazminat reddedildiğinde başvurulabilecek yollar ve dava süreci.</p>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2024-01-20',
+    readTime: '7 dk',
+    category: 'Sigorta Hukuku',
+    tags: ['sigorta', 'tazminat', 'red durumu']
+  },
+  8: {
+    id: 8,
+    title: 'İcra Takibi Başlatma: Alacağınızı Tahsil Etme Yolları',
+    excerpt: 'Alacaklıların icra takibi başlatma süreci, gerekli belgeler ve takip edilecek adımlar.',
+    content: `
+      <h2>İcra Takibi Nedir?</h2>
+      <p>İcra takibi, alacaklıların borçlularından alacaklarını tahsil etmek için başvurdukları yasal süreçtir.</p>
+      
+      <h2>İcra Takibi Türleri</h2>
+      <ul>
+        <li>Genel haciz yolu ile takip</li>
+        <li>İlamlı icra takibi</li>
+        <li>Kambiyo senetlerine özgü takip</li>
+      </ul>
+      
+      <h2>Takip Süreci</h2>
+      <ol>
+        <li>İcra dairesine başvuru</li>
+        <li>Ödeme emrinin gönderilmesi</li>
+        <li>İtiraz süresi (7 gün)</li>
+        <li>Haciz işlemlerinin başlatılması</li>
+        <li>Satış ve tahsilat</li>
+      </ol>
+      
+      <h2>Gerekli Belgeler</h2>
+      <p>İcra takibi için gerekli belgeler ve hazırlık süreci.</p>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2024-01-12',
+    readTime: '6 dk',
+    category: 'İcra İflas Hukuku',
+    tags: ['icra takibi', 'alacak tahsili', 'borç']
+  },
+  9: {
+    id: 9,
+    title: 'Kira Artışı Davaları: Kiracı ve Ev Sahibi Hakları',
+    excerpt: 'Kira artışı uyuşmazlıklarında tarafların hakları, yasal oranlar ve dava süreçleri.',
+    content: `
+      <h2>Kira Artışı Kuralları</h2>
+      <p>Kira artışı konusunda kiracı ve ev sahibinin hakları Türk Borçlar Kanunu ile düzenlenmiştir.</p>
+      
+      <h2>Yasal Artış Oranları</h2>
+      <ul>
+        <li>TÜFE oranına göre artış (yıllık)</li>
+        <li>Sözleşmede belirlenen oranlar</li>
+        <li>Anlaşmalı artış oranları</li>
+      </ul>
+      
+      <h2>Kira Artışı Davası</h2>
+      <p>Kira artışı konusunda anlaşmazlık durumunda dava açma süreci:</p>
+      <ol>
+        <li>Müzakere aşaması</li>
+        <li>Sulh arayışları</li>
+        <li>Mahkemeye başvuru</li>
+        <li>Bilirkişi incelemesi</li>
+      </ol>
+      
+      <h2>Kiracı ve Ev Sahibi Hakları</h2>
+      <p>Tarafların hakları ve yükümlülükleri detaylı olarak açıklanmaktadır.</p>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2024-01-08',
+    readTime: '5 dk',
+    category: 'Kira Hukuku',
+    tags: ['kira artışı', 'kiracı hakları', 'ev sahibi']
+  },
+  10: {
+    id: 10,
+    title: 'Tüketici Hakları: Ayıplı Mal ve Hizmet Durumunda Ne Yapmalı?',
+    excerpt: 'Satın aldığınız mal veya hizmette sorun yaşadığınızda tüketici haklarınız ve başvuru yolları.',
+    content: `
+      <h2>Tüketici Hakları Nelerdir?</h2>
+      <p>Tüketici Kanunu kapsamında tüketicilere tanınan temel haklar ve koruma mekanizmaları.</p>
+      
+      <h2>Ayıplı Mal Durumunda Yapılacaklar</h2>
+      <ul>
+        <li>Ücretsiz onarım talep etme</li>
+        <li>Ayıpsız mal ile değişim</li>
+        <li>Bedel indirimi</li>
+        <li>Sözleşmeden dönme</li>
+      </ul>
+      
+      <h2>Başvuru Mercileri</h2>
+      <p>Tüketici sorunları için başvuru yolları:</p>
+      <ul>
+        <li>Tüketici Hakem Heyetleri</li>
+        <li>Tüketici Mahkemeleri</li>
+        <li>Ticaret Bakanlığı</li>
+        <li>Tüketici Birlikleri</li>
+      </ul>
+      
+      <h2>Zamanaşımı Süreleri</h2>
+      <p>Tüketici haklarının kullanılması için önemli süreler ve dikkat edilecek noktalar.</p>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2024-01-03',
+    readTime: '6 dk',
+    category: 'Tüketici Hukuku',
+    tags: ['tüketici hakları', 'ayıplı mal', 'şikayet']
+  },
+  11: {
+    id: 11,
+    title: 'KVKK ve Kişisel Verilerin Korunması: Haklarınızı Bilin',
+    excerpt: 'Kişisel Verilerin Korunması Kanunu kapsamında sahip olduğunuz haklar ve ihlal durumunda yapılacaklar.',
+    content: `
+      <h2>KVKK Nedir?</h2>
+      <p>Kişisel Verilerin Korunması Kanunu, kişisel verilerin işlenmesi ve korunması ile ilgili temel düzenlemelerdir.</p>
+      
+      <h2>Kişisel Veri Sahibinin Hakları</h2>
+      <ul>
+        <li>Bilgilendirilme hakkı</li>
+        <li>Verilere erişim hakkı</li>
+        <li>Düzeltme hakkı</li>
+        <li>Silme hakkı</li>
+        <li>İtiraz hakkı</li>
+      </ul>
+      
+      <h2>Veri İhlali Durumunda Yapılacaklar</h2>
+      <ol>
+        <li>Veri sorumlusuna başvuru</li>
+        <li>Kişisel Verileri Koruma Kuruluna şikayet</li>
+        <li>Tazminat davası açma</li>
+      </ol>
+      
+      <h2>Açık Rıza</h2>
+      <p>Kişisel veri işleme için gerekli açık rıza şartları ve özellikleri.</p>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2023-12-25',
+    readTime: '8 dk',
+    category: 'Kişiler Hukuku',
+    tags: ['KVKK', 'kişisel veri', 'gizlilik']
+  },
+  12: {
+    id: 12,
+    title: 'Marka Tescili ve Fikri Mülkiyet Hakları',
+    excerpt: 'Marka tescil süreci, fikri mülkiyet haklarının korunması ve ihlal durumlarında yapılacaklar.',
+    content: `
+      <h2>Marka Tescili Nedir?</h2>
+      <p>Marka tescili, bir işaretin marka olarak hukuki koruma altına alınması sürecidir.</p>
+      
+      <h2>Tescil Süreci</h2>
+      <ol>
+        <li>Marka araştırması</li>
+        <li>Başvuru dilekçesi hazırlanması</li>
+        <li>Türk Patent ve Marka Kurumuna başvuru</li>
+        <li>İnceleme süreci</li>
+        <li>Yayın ve itiraz süreci</li>
+        <li>Tescil belgesi alınması</li>
+      </ol>
+      
+      <h2>Fikri Mülkiyet İhlalleri</h2>
+      <p>Marka ve patent ihlalleri durumunda başvuru yolları:</p>
+      <ul>
+        <li>İhtarname gönderilmesi</li>
+        <li>Hukuki dava açılması</li>
+        <li>Cezai müeyyideler</li>
+        <li>Tazminat talepleri</li>
+      </ul>
+      
+      <h2>Koruma Süreleri</h2>
+      <p>Marka ve patent koruma süreleri ile yenileme işlemleri.</p>
+    `,
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2023-12-18',
+    readTime: '7 dk',
+    category: 'Fikri Mülkiyet',
+    tags: ['marka tescili', 'patent', 'fikri mülkiyet']
   }
-  // Diğer blog yazıları...
 };
 
 const relatedPosts = [
-  { id: 3, title: 'İş Yerinde Mobbing: Hukuki Haklarınız', category: 'İş Hukuku' },
-  { id: 4, title: 'Gayrimenkul Alım Satım Sözleşmesi', category: 'Gayrimenkul Hukuku' },
-  { id: 5, title: 'Miras Hukuku Rehberi', category: 'Medeni Hukuk' }
+  { id: 7, title: 'Sigorta Tazminatı Nasıl Alınır?', category: 'Sigorta Hukuku' },
+  { id: 8, title: 'İcra Takibi Başlatma', category: 'İcra İflas Hukuku' },
+  { id: 9, title: 'Kira Artışı Davaları', category: 'Kira Hukuku' },
+  { id: 10, title: 'Tüketici Hakları', category: 'Tüketici Hukuku' },
+  { id: 11, title: 'KVKK ve Kişisel Verilerin Korunması', category: 'Kişiler Hukuku' },
+  { id: 12, title: 'Marka Tescili ve Fikri Mülkiyet', category: 'Fikri Mülkiyet' }
 ];
 
 export default function BlogDetailPage() {

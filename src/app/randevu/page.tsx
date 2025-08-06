@@ -1,9 +1,56 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Clock, Phone, Mail, CheckCircle } from 'lucide-react';
+import { Calendar, Clock, Phone, Mail, CheckCircle, Send, Loader } from 'lucide-react';
 
 export default function RandevuPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      const randevuData = {
+        ad: formData.get('ad'),
+        telefon: formData.get('telefon'),
+        email: formData.get('email'),
+        hukukAlani: formData.get('hukukAlani'),
+        tarih: formData.get('tarih'),
+        saat: formData.get('saat'),
+        gorusmeTuru: formData.get('gorusmeTuru'),
+        durum: formData.get('durum'),
+        aciliyet: formData.get('aciliyet'),
+        kvkk: formData.get('kvkk')
+      };
+
+      const response = await fetch('/api/randevu', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(randevuData),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        // Form'u reset et
+        (e.target as HTMLFormElement).reset();
+      } else {
+        throw new Error('Randevu gönderilirken bir hata oluştu');
+      }
+    } catch (err) {
+      setError('Randevu talebiniz gönderilemedi. Lütfen tekrar deneyin.');
+      console.error('Randevu gönderme hatası:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div className="py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -35,12 +82,13 @@ export default function RandevuPage() {
               Randevu Bilgileri
             </h2>
             
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               {/* Kişisel Bilgiler */}
               <div className="grid md:grid-cols-2 gap-4">
                 <motion.input
                   whileFocus={{ scale: 1.02 }}
                   type="text"
+                  name="ad"
                   placeholder="Adınız Soyadınız *"
                   className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white placeholder-slate-500"
                   required
@@ -48,6 +96,7 @@ export default function RandevuPage() {
                 <motion.input
                   whileFocus={{ scale: 1.02 }}
                   type="tel"
+                  name="telefon"
                   placeholder="Telefon Numaranız *"
                   className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white placeholder-slate-500"
                   required
@@ -57,24 +106,35 @@ export default function RandevuPage() {
               <motion.input
                 whileFocus={{ scale: 1.02 }}
                 type="email"
+                name="email"
                 placeholder="E-posta Adresiniz *"
                 className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white placeholder-slate-500"
                 required
               />
 
               {/* Hukuk Alanı */}
-                              <motion.select 
-                  whileFocus={{ scale: 1.02 }}
-                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
-                  required
-                >
-                  <option value="" className="text-slate-900">Hukuk Alanı Seçiniz *</option>
+              <motion.select 
+                whileFocus={{ scale: 1.02 }}
+                name="hukukAlani"
+                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
+                required
+              >
+                <option value="" className="text-slate-900">Hukuk Alanı Seçiniz *</option>
+                <option value="sigorta">Sigorta Hukuku</option>
                 <option value="ceza">Ceza Hukuku</option>
-                <option value="medeni">Medeni Hukuk</option>
-                <option value="ticaret">Ticaret Hukuku</option>
                 <option value="is">İş Hukuku</option>
-                <option value="aile">Aile Hukuku</option>
+                <option value="ticaret">Ticaret Hukuku</option>
+                <option value="miras">Miras Hukuku</option>
+                <option value="saglik">Sağlık Hukuku</option>
                 <option value="gayrimenkul">Gayrimenkul Hukuku</option>
+                <option value="kira">Kira Hukuku</option>
+                <option value="kisiler">Kişiler Hukuku</option>
+                <option value="aile">Aile Hukuku</option>
+                <option value="esya">Eşya Hukuku</option>
+                <option value="borclar">Borçlar Hukuku</option>
+                <option value="tuketici">Tüketici Hukuku</option>
+                <option value="idare">İdare Hukuku</option>
+                <option value="fikri">Fikri ve Sınai Haklar Hukuku</option>
                 <option value="icra">İcra İflas Hukuku</option>
               </motion.select>
 
@@ -83,12 +143,14 @@ export default function RandevuPage() {
                 <motion.input
                   whileFocus={{ scale: 1.02 }}
                   type="date"
+                  name="tarih"
                   className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
                   min={new Date().toISOString().split('T')[0]}
                   required
                 />
                 <motion.select 
                   whileFocus={{ scale: 1.02 }}
+                  name="saat"
                   className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
                   required
                 >
@@ -106,6 +168,7 @@ export default function RandevuPage() {
               {/* Görüşme Türü */}
               <motion.select 
                 whileFocus={{ scale: 1.02 }}
+                name="gorusmeTuru"
                 className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
                 required
               >
@@ -118,6 +181,7 @@ export default function RandevuPage() {
               {/* Durum Açıklaması */}
               <motion.textarea
                 whileFocus={{ scale: 1.02 }}
+                name="durum"
                 placeholder="Hukuki durumunuzu kısaca açıklayın... *"
                 rows={4}
                 className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all resize-none text-slate-900 bg-white placeholder-slate-500"
@@ -127,6 +191,7 @@ export default function RandevuPage() {
               {/* Aciliyet */}
               <motion.select 
                 whileFocus={{ scale: 1.02 }}
+                name="aciliyet"
                 className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
               >
                 <option value="" className="text-slate-900">Aciliyet Durumu</option>
@@ -137,7 +202,7 @@ export default function RandevuPage() {
 
               {/* KVKK */}
               <div className="flex items-start space-x-3">
-                <input type="checkbox" id="randevu-kvkk" className="mt-1" required />
+                <input type="checkbox" id="randevu-kvkk" name="kvkk" className="mt-1" required />
                 <label htmlFor="randevu-kvkk" className="text-sm text-slate-600">
                   <a href="/kvkk" className="text-slate-700 hover:underline">
                     KVKK kapsamında
@@ -145,14 +210,39 @@ export default function RandevuPage() {
                 </label>
               </div>
 
+              {/* Error Message */}
+              {error && (
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl">
+                  {error}
+                </div>
+              )}
+
+              {/* Success Message */}
+              {isSubmitted && (
+                <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-xl flex items-center">
+                  <CheckCircle className="w-5 h-5 mr-2" />
+                  Randevu talebiniz başarıyla gönderildi! 24 saat içinde size dönüş yapacağız.
+                </div>
+              )}
+
               {/* Submit Button */}
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <button 
                   type="submit"
-                  className="w-full bg-slate-900 hover:bg-slate-800 text-white py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center"
+                  disabled={isSubmitting}
+                  className="w-full bg-slate-900 hover:bg-slate-800 disabled:bg-slate-400 text-white py-4 rounded-xl text-lg font-semibold transition-colors flex items-center justify-center"
                 >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Randevu Talep Et
+                  {isSubmitting ? (
+                    <>
+                      <Loader className="w-5 h-5 mr-2 animate-spin" />
+                      Gönderiliyor...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-5 h-5 mr-2" />
+                      Randevu Talep Et
+                    </>
+                  )}
                 </button>
               </motion.div>
 

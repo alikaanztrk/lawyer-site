@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, User, Tag } from 'lucide-react';
 import { motion } from 'framer-motion';
+import NewsletterSignup from '@/components/NewsletterSignup';
 
 const blogPosts = [
   {
@@ -71,6 +72,72 @@ const blogPosts = [
     readTime: '6 dk',
     category: 'Ticaret Hukuku',
     tags: ['şirket kuruluşu', 'ticaret hukuku', 'girişimcilik']
+  },
+  {
+    id: 7,
+    title: 'Sigorta Tazminatı Nasıl Alınır? Red Durumunda Ne Yapmalı?',
+    excerpt: 'Sigorta şirketlerinden tazminat alma süreci, red durumlarında hukuki haklarınız ve başvuru yolları.',
+    content: 'Sigorta tazminatı alma süreçleri ve hukuki yollar...',
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2024-01-20',
+    readTime: '7 dk',
+    category: 'Sigorta Hukuku',
+    tags: ['sigorta', 'tazminat', 'red durumu']
+  },
+  {
+    id: 8,
+    title: 'İcra Takibi Başlatma: Alacağınızı Tahsil Etme Yolları',
+    excerpt: 'Alacaklıların icra takibi başlatma süreci, gerekli belgeler ve takip edilecek adımlar.',
+    content: 'İcra takibi ve alacak tahsili süreçleri...',
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2024-01-12',
+    readTime: '6 dk',
+    category: 'İcra İflas Hukuku',
+    tags: ['icra takibi', 'alacak tahsili', 'borç']
+  },
+  {
+    id: 9,
+    title: 'Kira Artışı Davaları: Kiracı ve Ev Sahibi Hakları',
+    excerpt: 'Kira artışı uyuşmazlıklarında tarafların hakları, yasal oranlar ve dava süreçleri.',
+    content: 'Kira artışı davalarında bilinmesi gerekenler...',
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2024-01-08',
+    readTime: '5 dk',
+    category: 'Kira Hukuku',
+    tags: ['kira artışı', 'kiracı hakları', 'ev sahibi']
+  },
+  {
+    id: 10,
+    title: 'Tüketici Hakları: Ayıplı Mal ve Hizmet Durumunda Ne Yapmalı?',
+    excerpt: 'Satın aldığınız mal veya hizmette sorun yaşadığınızda tüketici haklarınız ve başvuru yolları.',
+    content: 'Tüketici hakları ve şikayet süreçleri...',
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2024-01-03',
+    readTime: '6 dk',
+    category: 'Tüketici Hukuku',
+    tags: ['tüketici hakları', 'ayıplı mal', 'şikayet']
+  },
+  {
+    id: 11,
+    title: 'KVKK ve Kişisel Verilerin Korunması: Haklarınızı Bilin',
+    excerpt: 'Kişisel Verilerin Korunması Kanunu kapsamında sahip olduğunuz haklar ve ihlal durumunda yapılacaklar.',
+    content: 'KVKK hakları ve kişisel veri korunması...',
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2023-12-25',
+    readTime: '8 dk',
+    category: 'Kişiler Hukuku',
+    tags: ['KVKK', 'kişisel veri', 'gizlilik']
+  },
+  {
+    id: 12,
+    title: 'Marka Tescili ve Fikri Mülkiyet Hakları',
+    excerpt: 'Marka tescil süreci, fikri mülkiyet haklarının korunması ve ihlal durumlarında yapılacaklar.',
+    content: 'Marka tescili ve fikri mülkiyet korunması...',
+    author: 'Av. Işıl Bengisu Akpınar',
+    date: '2023-12-18',
+    readTime: '7 dk',
+    category: 'Fikri Mülkiyet',
+    tags: ['marka tescili', 'patent', 'fikri mülkiyet']
   }
 ];
 
@@ -81,7 +148,13 @@ const categories = [
   'İş Hukuku',
   'Gayrimenkul Hukuku',
   'Medeni Hukuk',
-  'Ticaret Hukuku'
+  'Ticaret Hukuku',
+  'Sigorta Hukuku',
+  'İcra İflas Hukuku',
+  'Kira Hukuku',
+  'Tüketici Hukuku',
+  'Kişiler Hukuku',
+  'Fikri Mülkiyet'
 ];
 
 export default function BlogPage() {
@@ -257,33 +330,13 @@ export default function BlogPage() {
         </div>
 
         {/* Newsletter Subscription */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-20 bg-slate-50 rounded-3xl p-12 text-center"
-        >
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">
-            Hukuki Gelişmeleri Kaçırmayın
-          </h2>
-          <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            En güncel hukuki bilgiler, pratik rehberler ve uzman analizleri doğrudan e-posta kutunuzda.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="E-posta adresiniz"
-              className="flex-1 px-6 py-4 border border-slate-200 rounded-full focus:ring-2 focus:ring-slate-500 focus:border-transparent"
-            />
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-slate-900 text-white font-bold rounded-full hover:bg-slate-800 transition-colors"
-            >
-              Abone Ol
-            </motion.button>
-          </div>
-        </motion.div>
+        <div className="mt-20">
+          <NewsletterSignup 
+            variant="inline"
+            title="Hukuki Gelişmeleri Kaçırmayın"
+            description="En güncel hukuki bilgiler, pratik rehberler ve uzman analizleri doğrudan e-posta kutunuzda."
+          />
+        </div>
       </div>
     </div>
   );

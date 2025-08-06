@@ -160,13 +160,13 @@ export default function IletisimPage() {
                   whileFocus={{ scale: 1.02 }}
                   type="text"
                   placeholder="Adınız Soyadınız"
-                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white placeholder-slate-500"
                 />
                 <motion.input
                   whileFocus={{ scale: 1.02 }}
                   type="tel"
                   placeholder="Telefon Numaranız"
-                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                  className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white placeholder-slate-500"
                 />
               </div>
 
@@ -174,38 +174,40 @@ export default function IletisimPage() {
                 whileFocus={{ scale: 1.02 }}
                 type="email"
                 placeholder="E-posta Adresiniz"
-                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white placeholder-slate-500"
               />
 
               <motion.select 
                 whileFocus={{ scale: 1.02 }}
-                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
               >
-                <option value="">Hukuk Alanı Seçiniz</option>
-                <option value="ceza">Ceza Hukuku</option>
-                <option value="medeni">Medeni Hukuk</option>
-                <option value="ticaret">Ticaret Hukuku</option>
-                <option value="is">İş Hukuku</option>
-                <option value="aile">Aile Hukuku</option>
-                <option value="gayrimenkul">Gayrimenkul Hukuku</option>
-                <option value="icra">İcra İflas Hukuku</option>
+                <option value="" className="text-slate-500">Hukuk Alanı Seçiniz</option>
+                <option value="sigorta" className="text-slate-900">Sigorta Hukuku</option>
+                <option value="ceza" className="text-slate-900">Ceza Hukuku</option>
+                <option value="is" className="text-slate-900">İş Hukuku</option>
+                <option value="ticaret" className="text-slate-900">Ticaret Hukuku</option>
+                <option value="aile" className="text-slate-900">Aile Hukuku</option>
+                <option value="gayrimenkul" className="text-slate-900">Gayrimenkul Hukuku</option>
+                <option value="icra" className="text-slate-900">İcra İflas Hukuku</option>
+                <option value="miras" className="text-slate-900">Miras Hukuku</option>
+                <option value="tuketici" className="text-slate-900">Tüketici Hukuku</option>
               </motion.select>
 
               <motion.select 
                 whileFocus={{ scale: 1.02 }}
-                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all"
+                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all text-slate-900 bg-white"
               >
-                <option value="">Aciliyet Durumu</option>
-                <option value="acil">Acil (24 saat içinde)</option>
-                <option value="normal">Normal (3-5 gün içinde)</option>
-                <option value="bilgi">Sadece Bilgi Almak İstiyorum</option>
+                <option value="" className="text-slate-500">Aciliyet Durumu</option>
+                <option value="acil" className="text-slate-900">Acil (24 saat içinde)</option>
+                <option value="normal" className="text-slate-900">Normal (3-5 gün içinde)</option>
+                <option value="bilgi" className="text-slate-900">Sadece Bilgi Almak İstiyorum</option>
               </motion.select>
 
               <motion.textarea
                 whileFocus={{ scale: 1.02 }}
                 placeholder="Durumunuzu detaylı bir şekilde açıklayın..."
                 rows={5}
-                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all resize-none"
+                className="w-full px-4 py-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-500 focus:border-transparent transition-all resize-none text-slate-900 bg-white placeholder-slate-500"
               />
 
               <div className="flex items-start space-x-3">

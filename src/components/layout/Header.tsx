@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail, Calendar } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function Header() {
@@ -120,10 +120,11 @@ export default function Header() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                href="/iletisim"
-                className="bg-slate-900 text-white px-6 py-3 rounded-full font-medium hover:bg-slate-800 transition-all duration-300 shadow-lg"
+                href="/randevu"
+                className="bg-amber-500 text-white px-6 py-3 rounded-full font-medium hover:bg-amber-600 transition-all duration-300 shadow-lg flex items-center"
               >
-                İletişim
+                <Calendar className="w-4 h-4 mr-2" />
+                Randevu Al
               </Link>
             </motion.div>
           </div>
@@ -152,11 +153,12 @@ export default function Header() {
                 </Link>
               ))}
               <Link
-                href="/iletisim"
-                className="bg-slate-800 text-white px-6 py-2 rounded-lg font-medium hover:bg-slate-900 transition-colors text-center"
+                href="/randevu"
+                className="bg-amber-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-amber-600 transition-colors text-center flex items-center justify-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                İletişim
+                <Calendar className="w-4 h-4 mr-2" />
+                Randevu Al
               </Link>
             </nav>
           </div>

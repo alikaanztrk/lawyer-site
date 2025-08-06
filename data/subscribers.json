@@ -1,0 +1,17 @@
+{
+  "subscribers": [
+    {
+      "id": "1754468835438",
+      "email": "admin@akpinarhukuk.av.tr",
+      "subscribedAt": "2025-08-06T08:27:15.438Z",
+      "isActive": true,
+      "source": "inline",
+      "kvkkConsent": true,
+      "unsubscribeToken": "5lsat17hi3xuc8q6csxprj",
+      "preferences": {
+        "categories": [],
+        "frequency": "weekly"
+      }
+    }
+  ]
+}
