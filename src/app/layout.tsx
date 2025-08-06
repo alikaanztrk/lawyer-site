@@ -16,12 +16,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Av. Işıl Akpınar | Hukuk Bürosu - İstanbul",
+  title: "Av. Işıl Bengisu Akpınar | Hukuk Bürosu - İstanbul",
   description: "İstanbul merkezli deneyimli avukat. Ceza, medeni, ticaret ve aile hukuku alanlarında uzman hukuki danışmanlık ve dava takip hizmetleri. Ücretsiz ilk görüşme.",
   keywords: ["avukat", "hukuk bürosu", "İstanbul avukat", "ceza avukatı", "boşanma avukatı", "ticaret hukuku", "hukuki danışmanlık"],
-  authors: [{ name: "Av. Işıl Akpınar" }],
-  creator: "Av. Işıl Akpınar",
-  publisher: "Işıl Akpınar Hukuk Bürosu",
+  authors: [{ name: "Av. Işıl Bengisu Akpınar" }],
+  creator: "Av. Işıl Bengisu Akpınar",
+  publisher: "Işıl Bengisu Akpınar Hukuk Bürosu",
   robots: {
     index: true,
     follow: true,
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'tr_TR',
     url: 'https://av.tr',
-    title: 'Av. Işıl Akpınar | Hukuk Bürosu - İstanbul',
+    title: 'Av. Işıl Bengisu Akpınar | Hukuk Bürosu - İstanbul',
     description: 'İstanbul merkezli deneyimli avukat. Ceza, medeni, ticaret ve aile hukuku alanlarında uzman hukuki danışmanlık ve dava takip hizmetleri.',
-    siteName: 'Av. Işıl Akpınar Hukuk Bürosu',
+    siteName: 'Av. Işıl Bengisu Akpınar Hukuk Bürosu',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Av. Işıl Akpınar | Hukuk Bürosu - İstanbul',
+    title: 'Av. Işıl Bengisu Akpınar | Hukuk Bürosu - İstanbul',
     description: 'İstanbul merkezli deneyimli avukat. Ceza, medeni, ticaret ve aile hukuku alanlarında uzman hukuki danışmanlık ve dava takip hizmetleri.',
   },
   verification: {

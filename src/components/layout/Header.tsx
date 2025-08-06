@@ -79,7 +79,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <div className="text-2xl font-bold text-slate-900">
-                              <span className="text-slate-600">Av.</span> Işıl Bengisu Ataç
+                              <span className="text-slate-600">Av.</span> Işıl Bengisu Akpınar
             </div>
           </Link>
 

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Gizlilik Politikası | Av. Işıl Akpınar',
+  title: 'Gizlilik Politikası | Av. Işıl Bengisu Akpınar',
   description: 'Web sitemizi kullanırken kişisel verilerinizin nasıl toplandığı, kullanıldığı ve korunduğu hakkında detaylı bilgiler.',
 };
 
@@ -28,7 +28,7 @@ export default function GizlilikPolitikasiPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Giriş</h2>
             <p className="text-gray-700 leading-relaxed">
-              Bu Gizlilik Politikası, Av. Işıl Akpınar Hukuk Bürosu olarak, web sitemizi ziyaret ettiğinizde 
+              Bu Gizlilik Politikası, Av. Işıl Bengisu Akpınar Hukuk Bürosu olarak, web sitemizi ziyaret ettiğinizde 
               veya hizmetlerimizi kullandığınızda kişisel verilerinizi nasıl topladığımız, kullandığımız, 
               sakladığımız ve koruduğumuz hakkında bilgi vermektedir.
             </p>

@@ -37,7 +37,7 @@ export default function HakkimizdaPage() {
               <div className="w-48 h-48 mx-auto rounded-full mb-8 overflow-hidden border-4 border-white/20 shadow-2xl">
                 <Image
                   src="/images/db6a08605d87ee01c65b32daff2ad111.jpg"
-                  alt="Av. Işıl Akpınar Profil Fotoğrafı"
+                  alt="Av. Işıl Bengisu Akpınar Profil Fotoğrafı"
                   width={192}
                   height={192}
                   className="w-full h-full object-cover"
@@ -45,7 +45,7 @@ export default function HakkimizdaPage() {
                 />
               </div>
               <div className="text-center">
-                <h2 className="text-3xl font-bold mb-3">Av. Işıl Akpınar</h2>
+                <h2 className="text-3xl font-bold mb-3">Av. Işıl Bengisu Akpınar</h2>
                 <p className="text-slate-200">Hukuk Bürosu Kurucusu</p>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function HakkimizdaPage() {
               Deneyim ve Uzmanlık
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              2019 yılından bu yana hukuk alanında aktif olarak çalışmakta olan Av. Işıl Akpınar, 
+                              2019 yılından bu yana hukuk alanında aktif olarak çalışmakta olan Av. Işıl Bengisu Akpınar, 
               Galatasaray Üniversitesi Hukuk Fakültesi mezunu olup, 5 yılı aşkın deneyimi ile 
               müvekkillerine en kaliteli hukuki hizmetleri sunmaktadır.
             </p>

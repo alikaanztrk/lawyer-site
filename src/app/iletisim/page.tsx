@@ -271,7 +271,7 @@ export default function IletisimPage() {
             <div className="lg:col-span-1 space-y-6">
               <div className="text-center lg:text-left">
                 <h3 className="text-xl font-semibold text-slate-900 mb-2">
-                  Av. Işıl Akpınar Hukuk Bürosu
+                  Av. Işıl Bengisu Akpınar Hukuk Bürosu
                 </h3>
                 <p className="text-slate-600">
                   Nişantaşı Mahallesi<br />
