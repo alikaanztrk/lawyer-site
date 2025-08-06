@@ -3,7 +3,7 @@
 import { notFound } from 'next/navigation';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle, Phone, Mail, Calendar, Scale, User, Building, Briefcase, Home, Heart, Gavel } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Phone, Mail, Calendar, Scale, User, Building, Briefcase, Home, Heart, Gavel, Shield, FileText, DollarSign, Stethoscope, Key, Users, Zap, Book, ShoppingCart, Settings } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const iconMap = {
@@ -14,9 +14,42 @@ const iconMap = {
   home: Home,
   heart: Heart,
   gavel: Gavel,
+  shield: Shield,
+  fileText: FileText,
+  dollarSign: DollarSign,
+  stethoscope: Stethoscope,
+  key: Key,
+  users: Users,
+  zap: Zap,
+  book: Book,
+  shoppingCart: ShoppingCart,
+  settings: Settings,
 };
 
 const servicesData = {
+  'sigorta-hukuku': {
+    title: 'Sigorta Hukuku',
+    icon: 'shield',
+    description: 'Sigorta sözleşmeleri, tazminat talepleri ve sigorta uyuşmazlıklarında müvekkillerimize kapsamlı hukuki destek sunuyoruz.',
+    color: 'bg-emerald-600',
+    services: [
+      'Sigorta tazminat davaları',
+      'Kasko ve trafik sigortası uyuşmazlıkları',
+      'Hayat sigortası işlemleri',
+      'Sağlık sigortası ihtilafları',
+      'Sigorta sözleşmesi inceleme',
+      'Sigorta şirketi ile müzakere',
+      'Ekspertiz raporu değerlendirme'
+    ],
+    process: [
+      'Sigorta dosyasının incelenmesi',
+      'Tazminat hakkının belirlenmesi',
+      'Ekspertiz sürecinin takibi',
+      'Sigorta şirketi ile görüşme',
+      'Dava açma ve takip süreci'
+    ],
+    consultation: 'Sigorta tazminat haklarınızın korunması için uzman desteği alın.'
+  },
   'ceza-hukuku': {
     title: 'Ceza Hukuku',
     icon: 'scales',
@@ -154,6 +187,213 @@ const servicesData = {
       'Karar sonrası takip işlemleri'
     ],
     consultation: 'Aile hukuku konularında hassas ve profesyonel yaklaşımla yanınızdayız.'
+  },
+  'miras-hukuku': {
+    title: 'Miras Hukuku',
+    icon: 'fileText',
+    description: 'Miras davalarında ve miras paylaşımlarında müvekkillerimize kapsamlı hukuki destek sağlıyoruz.',
+    color: 'bg-amber-600',
+    services: [
+      'Miras reddi işlemleri',
+      'Mirasçılık belgesi alınması',
+      'Vasiyetname düzenleme ve iptali',
+      'Miras paylaşım davaları',
+      'Saklı pay davaları',
+      'Mirastan mal kaçırma davaları',
+      'Veraset ilam davaları'
+    ],
+    process: [
+      'Miras durumunun tespiti',
+      'Mirasçıların belirlenmesi',
+      'Miras mallarının enventerin çıkarılması',
+      'Hukuki işlemlerin gerçekleştirilmesi',
+      'Paylaşım ve teslim süreçleri'
+    ],
+    consultation: 'Miras haklarınızın korunması ve paylaşım süreçlerinde uzman desteği alın.'
+  },
+  'saglik-hukuku': {
+    title: 'Sağlık Hukuku',
+    icon: 'stethoscope',
+    description: 'Tıbbi malpraktis, hasta hakları ve sağlık hizmetleri hukukunda uzman çözümler sunuyoruz.',
+    color: 'bg-teal-600',
+    services: [
+      'Tıbbi malpraktis davaları',
+      'Hasta hakları ihlalleri',
+      'Sağlık kuruluşu hukuki danışmanlığı',
+      'Medikal rapor değerlendirme',
+      'Hekim sorumluluk davaları',
+      'Sağlık sigortası uyuşmazlıkları',
+      'Rıza belgesi ve aydınlatma sorunları'
+    ],
+    process: [
+      'Tıbbi olayın değerlendirilmesi',
+      'Uzman hekim görüşü alınması',
+      'Malpraktis tespiti ve delil toplama',
+      'Tazminat tutarının hesaplanması',
+      'Dava açma ve takip süreci'
+    ],
+    consultation: 'Sağlık hizmetleri ile ilgili yaşadığınız mağduriyetlerde hukuki destek alın.'
+  },
+  'kira-hukuku': {
+    title: 'Kira Hukuku',
+    icon: 'key',
+    description: 'Kira sözleşmeleri, tahliye işlemleri ve kiracı-ev sahibi uyuşmazlıklarında uzman hizmet veriyoruz.',
+    color: 'bg-indigo-600',
+    services: [
+      'Kira sözleşmesi hazırlama ve inceleme',
+      'Kira artışı davaları',
+      'Tahliye davaları',
+      'Kiracı hakları savunması',
+      'Ecrimisil davaları',
+      'Kira güvencesi işlemleri',
+      'Kiralık tapu harç problemi'
+    ],
+    process: [
+      'Kira durumunun analizi',
+      'Sözleşme şartlarının incelenmesi',
+      'Hak ve yükümlülüklerin belirlenmesi',
+      'Dava stratejisinin oluşturulması',
+      'Mahkeme sürecinin takibi'
+    ],
+    consultation: 'Kira ile ilgili tüm hukuki sorunlarınızda deneyimli ekibimizden destek alın.'
+  },
+  'kisiler-hukuku': {
+    title: 'Kişiler Hukuku',
+    icon: 'user',
+    description: 'Kişilik hakları, nüfus işlemleri ve kişisel verilerin korunması konularında hukuki destek sunuyoruz.',
+    color: 'bg-blue-600',
+    services: [
+      'Kişilik hakları ihlali davaları',
+      'İsim ve soyadı değişikliği',
+      'KVKK uyumluluk danışmanlığı',
+      'Kişisel veri ihlalleri',
+      'Manevi tazminat davaları',
+      'Nüfus kayıt düzeltme',
+      'Cinsiyet değişikliği işlemleri'
+    ],
+    process: [
+      'Kişilik hakkı ihlalinin tespiti',
+      'Hukuki gerekçelerin hazırlanması',
+      'Gerekli belgelerin toplanması',
+      'Dava açma ve takip süreçleri',
+      'Tazminat ve düzeltme talepleri'
+    ],
+    consultation: 'Kişilik haklarınızın korunması için uzman hukuki danışmanlık alın.'
+  },
+  'esya-hukuku': {
+    title: 'Eşya Hukuku',
+    icon: 'zap',
+    description: 'Taşınır ve taşınmaz mal varlığı hakları konusunda uzman hukuki destek sağlıyoruz.',
+    color: 'bg-yellow-600',
+    services: [
+      'Mülkiyet hakları davaları',
+      'İrtifak hakkı tesisi ve iptali',
+      'Rehin ve ipotek işlemleri',
+      'Zilyetlik korunması davaları',
+      'Taşınmaz malın aynı tesisi',
+      'Sınır tespit davaları',
+      'Müşterek mülkiyet paylaşımı'
+    ],
+    process: [
+      'Mülkiyet durumunun tespiti',
+      'Tapu ve kadastro incelemesi',
+      'Hukuki durumun analizi',
+      'Dava stratejisinin belirlenmesi',
+      'İcra ve sonuç takibi'
+    ],
+    consultation: 'Mülkiyet haklarınızın korunması için profesyonel hukuki destek alın.'
+  },
+  'borclar-hukuku': {
+    title: 'Borçlar Hukuku',
+    icon: 'dollarSign',
+    description: 'Sözleşme hukuku, tazminat davaları ve borç-alacak ilişkilerinde uzman çözümler sunuyoruz.',
+    color: 'bg-rose-600',
+    services: [
+      'Sözleşme ihlali davaları',
+      'Tazminat talepleri',
+      'Alacak takibi ve tahsili',
+      'Sözleşme hazırlama ve inceleme',
+      'Vekalet sözleşmeleri',
+      'Sebepsiz zenginleşme davaları',
+      'Haksız fiil davaları'
+    ],
+    process: [
+      'Sözleşme şartlarının incelenmesi',
+      'İhlal durumunun tespiti',
+      'Zarar hesaplaması',
+      'Müzakere ve sulh arayışları',
+      'Dava açma ve takip süreci'
+    ],
+    consultation: 'Sözleşme ve borç-alacak ilişkilerinizde hukuki güvence için bizimle iletişime geçin.'
+  },
+  'tuketici-hukuku': {
+    title: 'Tüketici Hukuku',
+    icon: 'shoppingCart',
+    description: 'Tüketici hakları, ayıplı mal ve hizmet uyuşmazlıklarında uzman çözümler sağlıyoruz.',
+    color: 'bg-cyan-600',
+    services: [
+      'Ayıplı mal ve hizmet davaları',
+      'Tüketici mahkemesi süreçleri',
+      'Kredi kartı uyuşmazlıkları',
+      'Cayma hakkı işlemleri',
+      'Tüketici kredisi sorunları',
+      'Garanti ve servis problemleri',
+      'Online alışveriş sorunları'
+    ],
+    process: [
+      'Tüketici hakkının değerlendirilmesi',
+      'Delil ve belgelerin toplanması',
+      'Tüketici hakem heyeti başvurusu',
+      'Mahkeme sürecinin takibi',
+      'Tazminat ve iade işlemleri'
+    ],
+    consultation: 'Tüketici haklarınızın korunması için uzman hukuki destek alın.'
+  },
+  'idare-hukuku': {
+    title: 'İdare Hukuku',
+    icon: 'settings',
+    description: 'İdari işlemler, kamu yönetimi ve idari yargı süreçlerinde hukuki destek sunuyoruz.',
+    color: 'bg-slate-600',
+    services: [
+      'İdari dava açma',
+      'İdari işlem iptali',
+      'Kamu personel hukuku',
+      'İmar planı itirazları',
+      'İdari para cezalarına itiraz',
+      'Kamu ihalesi uyuşmazlıkları',
+      'Disiplin cezalarına itiraz'
+    ],
+    process: [
+      'İdari işlemin hukuka uygunluğunun incelenmesi',
+      'Dava açma süresinin belirlenmesi',
+      'İdari yargıya başvuru',
+      'Duruşma sürecinin takibi',
+      'Kararın icra edilmesi'
+    ],
+    consultation: 'İdari işlemler konusunda hukuki haklarınızı öğrenin ve koruyun.'
+  },
+  'fikri-sinai-haklar': {
+    title: 'Fikri ve Sınai Haklar Hukuku',
+    icon: 'book',
+    description: 'Marka, patent, telif hakları ve fikri mülkiyet korunması konularında uzman hizmet veriyoruz.',
+    color: 'bg-violet-600',
+    services: [
+      'Marka tescil işlemleri',
+      'Patent başvuruları',
+      'Telif hakları korunması',
+      'Fikri mülkiyet ihlalleri',
+      'Domain adı uyuşmazlıkları',
+      'Lisans sözleşmeleri',
+      'Haksız rekabet davaları'
+    ],
+    process: [
+      'Fikri mülkiyet araştırması',
+      'Tescil başvurusu hazırlığı',
+      'Patent ve Marka Kurumu işlemleri',
+      'İhlal durumlarının tespiti',
+      'Hukuki koruma sağlanması'
+    ],
+    consultation: 'Fikri mülkiyet haklarınızın korunması için uzman desteği alın.'
   },
   'icra-iflas-hukuku': {
     title: 'İcra İflas Hukuku',
@@ -349,7 +589,7 @@ export default function ServiceDetailPage() {
               <div className="space-y-3">
                 {Object.entries(servicesData)
                   .filter(([slug]) => slug !== params.slug)
-                  .slice(0, 4)
+                  .slice(0, 6)
                   .map(([slug, data]) => (
                     <Link
                       key={slug}

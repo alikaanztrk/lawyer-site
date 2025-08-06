@@ -19,8 +19,8 @@ export default function HakkimizdaPage() {
             Hakkımızda
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            15 yılı aşkın deneyimi ile müvekkillerine en kaliteli hukuki hizmetleri sunan, 
-            güven veren bir avukat olarak İstanbul merkezli hizmet veriyoruz.
+            Profesyonel hukuki danışmanlık ve güvenilir çözümler sunan, 
+            İstanbul merkezli uzman hukuk bürosu.
           </p>
         </motion.div>
 
@@ -81,6 +81,43 @@ export default function HakkimizdaPage() {
                 <div className="text-4xl font-bold text-slate-900 mb-2">%95</div>
                 <div className="text-slate-600">Müvekkil Memnuniyeti</div>
               </motion.div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Hukuk Bürosu Tanıtımı */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-3xl p-12 mb-24"
+        >
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold text-slate-900 mb-6">
+              Akpınar Hukuk Bürosu
+            </h2>
+            <div className="w-24 h-1 bg-slate-600 mx-auto rounded-full"></div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-slate-700 leading-relaxed text-center">
+              Akpınar Hukuk Bürosu, müvekkillerine etkin, güvenilir ve çözüm odaklı hukuki hizmet sunmayı ilke edinmiş bir hukuk bürosudur. 
+              Gerçek ve tüzel kişilere, danışmanlık ve dava süreçlerinde profesyonel destek sağlamaktadır. 
+            </p>
+            <p className="text-lg text-slate-700 leading-relaxed text-center mt-6">
+              Hukukun üstünlüğü ve adalet anlayışı çerçevesinde faaliyet gösteren büromuz; 
+              <span className="font-semibold text-slate-800"> sigorta hukuku, ceza hukuku, icra ve iflas hukuku, tüketici hukuku, aile hukuku, şirketler hukuku, iş hukuku</span> başta olmak üzere 
+              farklı hukuk alanlarında, güncel bilgi ve deneyime dayalı titiz bir yaklaşımla çözüm üretmeyi amaçlamaktadır.
+            </p>
+            
+            <div className="flex justify-center mt-8">
+              <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <Scale className="w-12 h-12 text-slate-600 mx-auto mb-4" />
+                <p className="text-sm text-slate-600 font-medium text-center">
+                  Adalet ve Hakkaniyet
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -214,13 +251,22 @@ export default function HakkimizdaPage() {
           </h3>
           <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
+              'Sigorta Hukuku',
               'Ceza Hukuku',
-              'Medeni Hukuk',
-              'Ticaret Hukuku',
               'İş Hukuku',
+              'İcra ve İflas Hukuku',
+              'Ticaret Hukuku',
+              'Miras Hukuku',
+              'Sağlık Hukuku',
               'Gayrimenkul Hukuku',
+              'Kira Hukuku',
+              'Kişiler Hukuku',
               'Aile Hukuku',
-              'İcra İflas Hukuku'
+              'Eşya Hukuku',
+              'Borçlar Hukuku',
+              'Tüketici Hukuku',
+              'İdare Hukuku',
+              'Fikri ve Sinai Haklar Hukuku'
             ].map((alan, index) => (
               <motion.div 
                 key={alan}

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Scale, User, Building, Briefcase, Home, Heart, Gavel, ArrowRight, CheckCircle } from 'lucide-react';
+import { Scale, User, Building, Briefcase, Home, Heart, Gavel, ArrowRight, CheckCircle, Shield, FileText, DollarSign, Stethoscope, Key, Users, Zap, Book, ShoppingCart, Settings } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const iconMap = {
@@ -12,9 +12,33 @@ const iconMap = {
   home: Home,
   heart: Heart,
   gavel: Gavel,
+  shield: Shield,
+  fileText: FileText,
+  dollarSign: DollarSign,
+  stethoscope: Stethoscope,
+  key: Key,
+  users: Users,
+  zap: Zap,
+  book: Book,
+  shoppingCart: ShoppingCart,
+  settings: Settings,
 };
 
 const services = [
+  {
+    id: 'sigorta-hukuku',
+    title: 'Sigorta Hukuku',
+    description: 'Sigorta sözleşmeleri, tazminat talepleri ve sigorta uyuşmazlıklarında uzman hizmet.',
+    icon: 'shield',
+    features: [
+      'Sigorta tazminat davaları',
+      'Kasko ve trafik sigortası',
+      'Hayat sigortası işlemleri',
+      'Sağlık sigortası uyuşmazlıkları'
+    ],
+    color: 'bg-emerald-600',
+    hoverColor: 'hover:bg-emerald-700',
+  },
   {
     id: 'ceza-hukuku',
     title: 'Ceza Hukuku',
@@ -28,34 +52,6 @@ const services = [
     ],
     color: 'bg-red-600',
     hoverColor: 'hover:bg-red-700',
-  },
-  {
-    id: 'medeni-hukuk',
-    title: 'Medeni Hukuk',
-    description: 'Kişiler hukuku, aile hukuku, miras hukuku ve eşya hukuku alanlarında uzman hizmet.',
-    icon: 'user',
-    features: [
-      'Tapu iptali ve tescil davaları',
-      'Mirasçılık belgesi işlemleri',
-      'Vasiyetname düzenlenmesi',
-      'Tazminat davaları'
-    ],
-    color: 'bg-blue-600',
-    hoverColor: 'hover:bg-blue-700',
-  },
-  {
-    id: 'ticaret-hukuku',
-    title: 'Ticaret Hukuku',
-    description: 'Şirketler hukuku, ticari sözleşmeler ve ticari uyuşmazlıkların çözümü.',
-    icon: 'building',
-    features: [
-      'Şirket kuruluşu ve ana sözleşme',
-      'Ticari sözleşme hazırlama',
-      'Haksız rekabet davaları',
-      'Marka ve patent hukuku'
-    ],
-    color: 'bg-purple-600',
-    hoverColor: 'hover:bg-purple-700',
   },
   {
     id: 'is-hukuku',
@@ -72,18 +68,88 @@ const services = [
     hoverColor: 'hover:bg-green-700',
   },
   {
+    id: 'ticaret-hukuku',
+    title: 'Ticaret Hukuku',
+    description: 'Şirketler hukuku, ticari sözleşmeler ve ticari uyuşmazlıkların çözümü.',
+    icon: 'building',
+    features: [
+      'Şirket kuruluşu ve ana sözleşme',
+      'Ticari sözleşme hazırlama',
+      'Haksız rekabet davaları',
+      'Marka ve patent hukuku'
+    ],
+    color: 'bg-purple-600',
+    hoverColor: 'hover:bg-purple-700',
+  },
+  {
+    id: 'miras-hukuku',
+    title: 'Miras Hukuku',
+    description: 'Miras davalarında ve miras paylaşımlarında profesyonel hukuki destek.',
+    icon: 'fileText',
+    features: [
+      'Miras reddi işlemleri',
+      'Mirasçılık belgesi',
+      'Vasiyetname düzenleme',
+      'Miras paylaşım davaları'
+    ],
+    color: 'bg-amber-600',
+    hoverColor: 'hover:bg-amber-700',
+  },
+  {
+    id: 'saglik-hukuku',
+    title: 'Sağlık Hukuku',
+    description: 'Tıbbi malpraktis, hasta hakları ve sağlık hizmetleri hukukunda uzman çözümler.',
+    icon: 'stethoscope',
+    features: [
+      'Tıbbi malpraktis davaları',
+      'Hasta hakları ihlalleri',
+      'Sağlık kuruluşu danışmanlığı',
+      'Medikal rapor değerlendirme'
+    ],
+    color: 'bg-teal-600',
+    hoverColor: 'hover:bg-teal-700',
+  },
+  {
     id: 'gayrimenkul-hukuku',
     title: 'Gayrimenkul Hukuku',
     description: 'Gayrimenkul alım-satım, kiralama, tapu işlemleri ve imar hukuku.',
     icon: 'home',
     features: [
       'Tapu ve kadastro davaları',
-      'Kira sözleşmeleri',
+      'Gayrimenkul sözleşmeleri',
       'Tahliye davaları',
       'İmar hukuku danışmanlığı'
     ],
     color: 'bg-orange-600',
     hoverColor: 'hover:bg-orange-700',
+  },
+  {
+    id: 'kira-hukuku',
+    title: 'Kira Hukuku',
+    description: 'Kira sözleşmeleri, tahliye işlemleri ve kiracı-ev sahibi uyuşmazlıkları.',
+    icon: 'key',
+    features: [
+      'Kira sözleşmesi hazırlama',
+      'Kira artışı davaları',
+      'Tahliye davaları',
+      'Kiracı hakları savunması'
+    ],
+    color: 'bg-indigo-600',
+    hoverColor: 'hover:bg-indigo-700',
+  },
+  {
+    id: 'kisiler-hukuku',
+    title: 'Kişiler Hukuku',
+    description: 'Kişilik hakları, nüfus işlemleri ve kişisel verilerin korunması.',
+    icon: 'user',
+    features: [
+      'Kişilik hakları davaları',
+      'İsim değişikliği işlemleri',
+      'KVKK uyumluluk danışmanlığı',
+      'Kişisel veri ihlalleri'
+    ],
+    color: 'bg-blue-600',
+    hoverColor: 'hover:bg-blue-700',
   },
   {
     id: 'aile-hukuku',
@@ -98,6 +164,76 @@ const services = [
     ],
     color: 'bg-pink-600',
     hoverColor: 'hover:bg-pink-700',
+  },
+  {
+    id: 'esya-hukuku',
+    title: 'Eşya Hukuku',
+    description: 'Taşınır ve taşınmaz mal varlığı hakları konusunda uzman hukuki destek.',
+    icon: 'zap',
+    features: [
+      'Mülkiyet hakları davaları',
+      'İrtifak hakkı tesisi',
+      'Rehin ve ipotekler',
+      'Zilyetlik korunması'
+    ],
+    color: 'bg-yellow-600',
+    hoverColor: 'hover:bg-yellow-700',
+  },
+  {
+    id: 'borclar-hukuku',
+    title: 'Borçlar Hukuku',
+    description: 'Sözleşme hukuku, tazminat davaları ve borç-alacak ilişkileri.',
+    icon: 'dollarSign',
+    features: [
+      'Sözleşme ihlali davaları',
+      'Tazminat talepleri',
+      'Alacak takibi',
+      'Sözleşme hazırlama'
+    ],
+    color: 'bg-rose-600',
+    hoverColor: 'hover:bg-rose-700',
+  },
+  {
+    id: 'tuketici-hukuku',
+    title: 'Tüketici Hukuku',
+    description: 'Tüketici hakları, ayıplı mal ve hizmet uyuşmazlıklarında uzman çözümler.',
+    icon: 'shoppingCart',
+    features: [
+      'Ayıplı mal/hizmet davaları',
+      'Tüketici mahkemesi süreçleri',
+      'Kredi kartı uyuşmazlıkları',
+      'Cayma hakkı işlemleri'
+    ],
+    color: 'bg-cyan-600',
+    hoverColor: 'hover:bg-cyan-700',
+  },
+  {
+    id: 'idare-hukuku',
+    title: 'İdare Hukuku',
+    description: 'İdari işlemler, kamu yönetimi ve idari yargı süreçlerinde hukuki destek.',
+    icon: 'settings',
+    features: [
+      'İdari dava açma',
+      'İdari işlem iptali',
+      'Kamu personel hukuku',
+      'İmar planı itirazları'
+    ],
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'fikri-sinai-haklar',
+    title: 'Fikri ve Sınai Haklar Hukuku',
+    description: 'Marka, patent, telif hakları ve fikri mülkiyet korunması.',
+    icon: 'book',
+    features: [
+      'Marka tescil işlemleri',
+      'Patent başvuruları',
+      'Telif hakları korunması',
+      'Fikri mülkiyet ihlalleri'
+    ],
+    color: 'bg-violet-600',
+    hoverColor: 'hover:bg-violet-700',
   },
 ];
 
@@ -122,7 +258,7 @@ export default function HizmetlerimizPage() {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-20">
           {services.map((service, index) => {
             const IconComponent = iconMap[service.icon as keyof typeof iconMap];
             return (
