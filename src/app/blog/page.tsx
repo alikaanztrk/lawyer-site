@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, User, Tag } from 'lucide-react';
 import { motion } from 'framer-motion';
-import NewsletterSignup from '@/components/NewsletterSignup';
 
 const blogPosts = [
   {
@@ -329,14 +328,7 @@ export default function BlogPage() {
           ))}
         </div>
 
-        {/* Newsletter Subscription */}
-        <div className="mt-20">
-          <NewsletterSignup 
-            variant="inline"
-            title="Hukuki Gelişmeleri Kaçırmayın"
-            description="En güncel hukuki bilgiler, pratik rehberler ve uzman analizleri doğrudan e-posta kutunuzda."
-          />
-        </div>
+
       </div>
     </div>
   );

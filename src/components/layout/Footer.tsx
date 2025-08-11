@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Phone, Mail, MapPin, Clock, Linkedin, Twitter, Instagram, ExternalLink, Heart } from 'lucide-react';
-import NewsletterSignup from '../NewsletterSignup';
 
 export default function Footer() {
   return (
