@@ -12,7 +12,7 @@ export default function HeroSection() {
       {/* Arka Plan Resmi */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/backG.jpg"
+          src="/images/newbackground.jpg"
           alt="İstanbul Skyline"
           fill
           className="object-cover object-center"
@@ -20,8 +20,8 @@ export default function HeroSection() {
           quality={100}
         />
         {/* 3D Overlay Efektleri */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-slate-900/80"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/20 to-slate-900/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-slate-900/25 to-slate-900/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/10 to-slate-900/30"></div>
         {/* Animated Particles */}
         <div className="absolute inset-0">
           {[...Array(20)].map((_, i) => (
@@ -77,11 +77,11 @@ export default function HeroSection() {
                 transform: 'perspective(1000px)',
               }}
             >
-              Hukuki Haklarınızı 
+              <span className="text-white">Hukuki Haklarınızı</span>
               <br />
-              <span className="text-emerald-400 drop-shadow-lg"> Profesyonelce </span>
+              <span className="text-white"> Profesyonelce </span>
               <br />
-              Koruyoruz
+              <span className="text-white">Koruyoruz</span>
             </motion.h1>
             
             <motion.p 
@@ -109,7 +109,7 @@ export default function HeroSection() {
                 whileTap={{ scale: 0.95 }}
                 style={{ transform: 'perspective(1000px)' }}
               >
-                <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-full transition-all duration-300 shadow-xl border-0">
+                <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full transition-all duration-300 shadow-xl border-0">
                   <Calendar className="w-5 h-5 mr-2" />
                   Randevu Talep Et
                 </Button>
@@ -129,29 +129,7 @@ export default function HeroSection() {
             </a>
           </motion.div>
 
-          {/* Profesyonel Motto */}
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="text-center pt-8"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 1.2 }}
-              className="inline-flex items-center px-8 py-4 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg"
-            >
-              <div className="text-center">
-                <div className="text-lg font-medium text-emerald-400 mb-1">
-                  &ldquo;Adalet, güçlünün zayıfa karşı sorumluluğudur&rdquo;
-                </div>
-                <div className="text-sm text-white/70">
-                  - Av. Işıl Bengisu Akpınar
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
+
         </div>
         
         {/* Scroll Down Indicator */}

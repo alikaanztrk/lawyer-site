@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Scale, User, Building, Briefcase, Home, Heart, Gavel, ArrowRight } from 'lucide-react';
+import { Scale, User, Building, Briefcase, Home, Heart, Gavel, ArrowRight, Shield, FileText, DollarSign, Calculator, Users, Stethoscope, Car, Brain, Landmark, CreditCard } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const iconMap = {
@@ -12,30 +12,32 @@ const iconMap = {
   home: Home,
   heart: Heart,
   gavel: Gavel,
+  shield: Shield,
+  filetext: FileText,
+  dollarsign: DollarSign,
+  calculator: Calculator,
+  users: Users,
+  stethoscope: Stethoscope,
+  car: Car,
+  brain: Brain,
+  landmark: Landmark,
+  creditcard: CreditCard,
 };
 
 const services = [
+  {
+    id: 'sigorta-hukuku',
+    title: 'Sigorta Hukuku',
+    description: 'Sigorta sözleşmeleri, hasar ve tazminat davalarında uzman hizmet',
+    icon: 'shield' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
   {
     id: 'ceza-hukuku',
     title: 'Ceza Hukuku',
     description: 'Ceza davalarında uzman hukuki danışmanlık ve temsil hizmetleri',
     icon: 'scales' as keyof typeof iconMap,
-    color: 'bg-slate-600',
-    hoverColor: 'hover:bg-slate-700',
-  },
-  {
-    id: 'medeni-hukuk',
-    title: 'Medeni Hukuk',
-    description: 'Kişisel haklar, aile hukuku ve miras davalarında uzman hizmet',
-    icon: 'user' as keyof typeof iconMap,
-    color: 'bg-slate-600',
-    hoverColor: 'hover:bg-slate-700',
-  },
-  {
-    id: 'ticaret-hukuku',
-    title: 'Ticaret Hukuku',
-    description: 'Şirket kuruluşu, ticari anlaşmazlıklar ve ticaret hukuku danışmanlığı',
-    icon: 'building' as keyof typeof iconMap,
     color: 'bg-slate-600',
     hoverColor: 'hover:bg-slate-700',
   },
@@ -48,6 +50,38 @@ const services = [
     hoverColor: 'hover:bg-slate-700',
   },
   {
+    id: 'icra-iflas-hukuku',
+    title: 'İcra ve İflas Hukuku',
+    description: 'Alacak takibi, haciz işlemleri ve iflas süreçlerinde uzman hizmet',
+    icon: 'gavel' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'ticaret-hukuku',
+    title: 'Ticaret Hukuku',
+    description: 'Şirket kuruluşu, ticari anlaşmazlıklar ve ticaret hukuku danışmanlığı',
+    icon: 'building' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'miras-hukuku',
+    title: 'Miras Hukuku',
+    description: 'Miras davaları, vasiyet işlemleri ve miras paylaşımı',
+    icon: 'filetext' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'saglik-hukuku',
+    title: 'Sağlık Hukuku',
+    description: 'Tıbbi malpraktis, hasta hakları ve sağlık hizmetleri hukuku',
+    icon: 'stethoscope' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
     id: 'gayrimenkul-hukuku',
     title: 'Gayrimenkul Hukuku',
     description: 'Tapu işlemleri, emlak alım-satımı ve gayrimenkul anlaşmazlıkları',
@@ -56,10 +90,66 @@ const services = [
     hoverColor: 'hover:bg-slate-700',
   },
   {
+    id: 'kira-hukuku',
+    title: 'Kira Hukuku',
+    description: 'Kira sözleşmeleri, tahliye davaları ve kira artışı anlaşmazlıkları',
+    icon: 'car' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'kisiler-hukuku',
+    title: 'Kişiler Hukuku',
+    description: 'Kişilik hakları, nüfus işlemleri ve kişi varlığının korunması',
+    icon: 'user' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
     id: 'aile-hukuku',
     title: 'Aile Hukuku',
     description: 'Boşanma, velayet, nafaka ve aile içi anlaşmazlıklar',
     icon: 'heart' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'esya-hukuku',
+    title: 'Eşya Hukuku',
+    description: 'Mülkiyet hakları, taşınır ve taşınmaz mal hakları',
+    icon: 'dollarsign' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'borclar-hukuku',
+    title: 'Borçlar Hukuku',
+    description: 'Sözleşme hukuku, sorumluluk hukuku ve borç ilişkileri',
+    icon: 'calculator' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'tuketici-hukuku',
+    title: 'Tüketici Hukuku',
+    description: 'Tüketici hakları, ayıplı mal ve tüketici mahkemesi davaları',
+    icon: 'creditcard' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'idare-hukuku',
+    title: 'İdare Hukuku',
+    description: 'İdari davalar, kamu hizmetleri ve idari işlemler',
+    icon: 'landmark' as keyof typeof iconMap,
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'fikri-sinai-haklar',
+    title: 'Fikri ve Sınai Haklar Hukuku',
+    description: 'Patent, marka, telif hakları ve fikri mülkiyet koruması',
+    icon: 'brain' as keyof typeof iconMap,
     color: 'bg-slate-600',
     hoverColor: 'hover:bg-slate-700',
   },
@@ -87,7 +177,7 @@ export default function ServicesSection() {
         </motion.div>
 
         {/* Hizmetler Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {services.map((service, index) => {
             const IconComponent = iconMap[service.icon];
             return (
@@ -95,7 +185,7 @@ export default function ServicesSection() {
                 key={service.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: index * 0.05 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -8 }}
                 className="group"
@@ -104,20 +194,20 @@ export default function ServicesSection() {
                   href={`/hizmetlerimiz/${service.id}`}
                   className="block bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100 hover:border-slate-200"
                 >
-                  <div className="p-8">
-                    <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${service.color} ${service.hoverColor} transition-all duration-300 mb-6 group-hover:scale-110 group-hover:rotate-3`}>
-                      <IconComponent className="w-8 h-8 text-white" />
+                  <div className="p-6">
+                    <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${service.color} ${service.hoverColor} transition-all duration-300 mb-4 group-hover:scale-110 group-hover:rotate-3`}>
+                      <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">
+                    <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-slate-700 transition-colors">
                       {service.title}
                     </h3>
                     
-                    <p className="text-slate-600 mb-6 leading-relaxed">
+                    <p className="text-slate-600 mb-4 leading-relaxed text-sm">
                       {service.description}
                     </p>
                     
-                    <div className="flex items-center text-slate-700 font-medium group-hover:text-slate-900">
+                    <div className="flex items-center text-slate-700 font-medium group-hover:text-slate-900 text-sm">
                       <span>Detaylı Bilgi</span>
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
                     </div>
@@ -127,50 +217,6 @@ export default function ServicesSection() {
             );
           })}
         </div>
-
-        {/* İcra İflas Hukuku - Özel Kart */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 lg:p-12 text-white mb-16"
-        >
-          <div className="flex flex-col lg:flex-row items-center justify-between">
-            <div className="lg:flex-1 mb-8 lg:mb-0">
-              <div className="flex items-center mb-6">
-                <motion.div 
-                  whileHover={{ rotate: 10 }}
-                  className="bg-white/10 p-4 rounded-2xl mr-4 backdrop-blur-sm"
-                >
-                  <Gavel className="w-8 h-8 text-white" />
-                </motion.div>
-                <h3 className="text-3xl font-bold">İcra İflas Hukuku</h3>
-              </div>
-              <p className="text-slate-200 text-lg mb-6 leading-relaxed">
-                Alacak takibi, haciz işlemleri ve iflas süreçlerinde uzman hizmet. 
-                Hızlı ve etkili çözümlerle alacaklarınızı tahsil edin.
-              </p>
-              <ul className="text-slate-200 space-y-3">
-                <li className="flex items-center"><span className="w-2 h-2 bg-white rounded-full mr-3"></span>İcra takibi başlatma ve takip</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-white rounded-full mr-3"></span>Haciz işlemlerine itiraz</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-white rounded-full mr-3"></span>İflas davası açma</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-white rounded-full mr-3"></span>Konkordato süreçleri</li>
-              </ul>
-            </div>
-            <div className="lg:ml-8">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link
-                  href="/hizmetlerimiz/icra-iflas-hukuku"
-                  className="inline-flex items-center px-8 py-4 bg-white text-slate-800 font-bold rounded-full hover:bg-slate-100 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Detaylı Bilgi
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-              </motion.div>
-            </div>
-          </div>
-        </motion.div>
 
         {/* Alt Bilgi */}
         <motion.div 

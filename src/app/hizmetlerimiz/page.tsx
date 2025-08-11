@@ -36,8 +36,22 @@ const services = [
       'Hayat sigortası işlemleri',
       'Sağlık sigortası uyuşmazlıkları'
     ],
-    color: 'bg-emerald-600',
-    hoverColor: 'hover:bg-emerald-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
+  },
+  {
+    id: 'icra-iflas-hukuku',
+    title: 'İcra ve İflas Hukuku',
+    description: 'Alacak takibi, haciz işlemleri ve iflas süreçlerinde uzman hizmet.',
+    icon: 'gavel',
+    features: [
+      'İcra takibi başlatma ve takip',
+      'Haciz işlemlerine itiraz',
+      'İflas davası açma',
+      'Konkordato süreçleri'
+    ],
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'ceza-hukuku',
@@ -50,8 +64,8 @@ const services = [
       'Asliye Ceza Mahkemesi davaları',
       'İnfaz hukuku ve denetimli serbestlik'
     ],
-    color: 'bg-red-600',
-    hoverColor: 'hover:bg-red-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'is-hukuku',
@@ -64,8 +78,8 @@ const services = [
       'İş kazası tazminat davaları',
       'İş sözleşmesi hazırlama'
     ],
-    color: 'bg-green-600',
-    hoverColor: 'hover:bg-green-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'ticaret-hukuku',
@@ -78,8 +92,8 @@ const services = [
       'Haksız rekabet davaları',
       'Marka ve patent hukuku'
     ],
-    color: 'bg-purple-600',
-    hoverColor: 'hover:bg-purple-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'miras-hukuku',
@@ -92,8 +106,8 @@ const services = [
       'Vasiyetname düzenleme',
       'Miras paylaşım davaları'
     ],
-    color: 'bg-amber-600',
-    hoverColor: 'hover:bg-amber-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'saglik-hukuku',
@@ -106,8 +120,8 @@ const services = [
       'Sağlık kuruluşu danışmanlığı',
       'Medikal rapor değerlendirme'
     ],
-    color: 'bg-teal-600',
-    hoverColor: 'hover:bg-teal-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'gayrimenkul-hukuku',
@@ -120,8 +134,8 @@ const services = [
       'Tahliye davaları',
       'İmar hukuku danışmanlığı'
     ],
-    color: 'bg-orange-600',
-    hoverColor: 'hover:bg-orange-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'kira-hukuku',
@@ -134,8 +148,8 @@ const services = [
       'Tahliye davaları',
       'Kiracı hakları savunması'
     ],
-    color: 'bg-indigo-600',
-    hoverColor: 'hover:bg-indigo-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'kisiler-hukuku',
@@ -148,8 +162,8 @@ const services = [
       'KVKK uyumluluk danışmanlığı',
       'Kişisel veri ihlalleri'
     ],
-    color: 'bg-blue-600',
-    hoverColor: 'hover:bg-blue-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'aile-hukuku',
@@ -162,8 +176,8 @@ const services = [
       'Velayet ve görüşme hakkı',
       'Mal rejimi tasfiyesi'
     ],
-    color: 'bg-pink-600',
-    hoverColor: 'hover:bg-pink-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'esya-hukuku',
@@ -176,8 +190,8 @@ const services = [
       'Rehin ve ipotekler',
       'Zilyetlik korunması'
     ],
-    color: 'bg-yellow-600',
-    hoverColor: 'hover:bg-yellow-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'borclar-hukuku',
@@ -190,8 +204,8 @@ const services = [
       'Alacak takibi',
       'Sözleşme hazırlama'
     ],
-    color: 'bg-rose-600',
-    hoverColor: 'hover:bg-rose-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'tuketici-hukuku',
@@ -204,8 +218,8 @@ const services = [
       'Kredi kartı uyuşmazlıkları',
       'Cayma hakkı işlemleri'
     ],
-    color: 'bg-cyan-600',
-    hoverColor: 'hover:bg-cyan-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
   {
     id: 'idare-hukuku',
@@ -232,8 +246,8 @@ const services = [
       'Telif hakları korunması',
       'Fikri mülkiyet ihlalleri'
     ],
-    color: 'bg-violet-600',
-    hoverColor: 'hover:bg-violet-700',
+    color: 'bg-slate-600',
+    hoverColor: 'hover:bg-slate-700',
   },
 ];
 
@@ -308,48 +322,7 @@ export default function HizmetlerimizPage() {
           })}
         </div>
 
-        {/* İcra İflas - Special Section */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 lg:p-12 text-white mb-20"
-        >
-          <div className="flex flex-col lg:flex-row items-center justify-between">
-            <div className="lg:flex-1 mb-8 lg:mb-0">
-              <div className="flex items-center mb-6">
-                <motion.div 
-                  whileHover={{ rotate: 10 }}
-                  className="bg-white/10 p-4 rounded-2xl mr-4 backdrop-blur-sm"
-                >
-                  <Gavel className="w-8 h-8 text-white" />
-                </motion.div>
-                <h3 className="text-3xl font-bold">İcra İflas Hukuku</h3>
-              </div>
-              <p className="text-slate-200 text-lg mb-6 leading-relaxed">
-                Alacak takibi, haciz işlemleri ve iflas süreçlerinde uzman hizmet. 
-                Hızlı ve etkili çözümlerle alacaklarınızı tahsil edin.
-              </p>
-              <ul className="text-slate-200 space-y-3">
-                <li className="flex items-center"><CheckCircle className="w-5 h-5 mr-3 text-green-400" />İcra takibi başlatma ve takip</li>
-                <li className="flex items-center"><CheckCircle className="w-5 h-5 mr-3 text-green-400" />Haciz işlemlerine itiraz</li>
-                <li className="flex items-center"><CheckCircle className="w-5 h-5 mr-3 text-green-400" />İflas davası açma</li>
-                <li className="flex items-center"><CheckCircle className="w-5 h-5 mr-3 text-green-400" />Konkordato süreçleri</li>
-              </ul>
-            </div>
-            <div className="lg:ml-8">
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Link
-                  href="/hizmetlerimiz/icra-iflas-hukuku"
-                  className="inline-flex items-center px-8 py-4 bg-white text-slate-800 font-bold rounded-full hover:bg-slate-100 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Detaylı Bilgi
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-              </motion.div>
-            </div>
-          </div>
-        </motion.div>
+
 
         {/* CTA Section */}
         <motion.div 
@@ -370,7 +343,7 @@ export default function HizmetlerimizPage() {
                 href="/iletisim"
                 className="inline-flex items-center px-8 py-4 bg-slate-900 text-white font-bold rounded-full hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                Ücretsiz Danışmanlık
+                Randevu Al
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
             </motion.div>
