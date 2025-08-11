@@ -187,7 +187,7 @@ export async function POST(request: NextRequest) {
     // E-posta gönder
     const data = await resend.emails.send({
       from: 'Randevu Sistemi <randevu@av.tr>',
-      to: ['alikaan.ozturk@outlook.com'], // Buraya gerçek e-posta adresinizi yazın
+      to: ['info@akpinarhukuk.av.tr'], // Buraya gerçek e-posta adresinizi yazın
       subject: `🏛️ Yeni Randevu Talebi - ${ad} (${hukukAlanlari[hukukAlani]})`,
       html: emailHtml,
     });

@@ -186,11 +186,18 @@ export default function IletisimPage() {
                 <option value="ceza" className="text-slate-900">Ceza Hukuku</option>
                 <option value="is" className="text-slate-900">İş Hukuku</option>
                 <option value="ticaret" className="text-slate-900">Ticaret Hukuku</option>
-                <option value="aile" className="text-slate-900">Aile Hukuku</option>
-                <option value="gayrimenkul" className="text-slate-900">Gayrimenkul Hukuku</option>
-                <option value="icra" className="text-slate-900">İcra İflas Hukuku</option>
                 <option value="miras" className="text-slate-900">Miras Hukuku</option>
+                <option value="saglik" className="text-slate-900">Sağlık Hukuku</option>
+                <option value="gayrimenkul" className="text-slate-900">Gayrimenkul Hukuku</option>
+                <option value="kira" className="text-slate-900">Kira Hukuku</option>
+                <option value="kisiler" className="text-slate-900">Kişiler Hukuku</option>
+                <option value="aile" className="text-slate-900">Aile Hukuku</option>
+                <option value="esya" className="text-slate-900">Eşya Hukuku</option>
+                <option value="borclar" className="text-slate-900">Borçlar Hukuku</option>
                 <option value="tuketici" className="text-slate-900">Tüketici Hukuku</option>
+                <option value="idare" className="text-slate-900">İdare Hukuku</option>
+                <option value="fikri" className="text-slate-900">Fikri ve Sınai Haklar Hukuku</option>
+                <option value="icra" className="text-slate-900">İcra İflas Hukuku</option>
               </motion.select>
 
               <motion.select 

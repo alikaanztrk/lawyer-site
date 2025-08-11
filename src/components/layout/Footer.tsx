@@ -100,7 +100,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-300 text-sm mb-4 md:mb-0">
               <div className="mb-2">
-                © 2024 Av. Işıl Bengisu Akpınar Hukuk Bürosu. Tüm hakları saklıdır.
+                © 2025 Av. Işıl Bengisu Akpınar Hukuk Bürosu. Tüm hakları saklıdır.
               </div>
               <div className="flex items-center text-gray-400">
                 <span>Made with</span>
