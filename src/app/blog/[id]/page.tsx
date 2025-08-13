@@ -45,7 +45,7 @@ const blogPosts = {
       <p>Ceza davası süreci karmaşık ve uzun bir süreçtir. Bu süreçte doğru hukuki yönlendirme almak, hem adil yargılanma hakkınızı kullanmanız hem de en iyi sonuca ulaşmanız için elzemdir.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-15',
+    date: '2025-03-15',
     readTime: '8 dk',
     category: 'Ceza Hukuku',
     tags: ['ceza davası', 'hukuki süreç', 'dava açma']
@@ -79,7 +79,7 @@ const blogPosts = {
       <p>Boşanma süreci sadece evliliğin sona ermesi değil, aynı zamanda mal paylaşımı, nafaka, velayet gibi önemli konuları da içerir. Bu konularda doğru kararlar alabilmek için uzman hukuki destek almak gereklidir.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-10',
+    date: '2025-02-28',
     readTime: '6 dk',
     category: 'Aile Hukuku',
     tags: ['boşanma', 'aile hukuku', 'dava süreci']
@@ -112,7 +112,7 @@ const blogPosts = {
       <p>Mobbing davalarında delil toplama kritik önemdedir. E-postalar, mesajlar, tanık ifadeleri ve tıbbi raporlar önemli delillerdir.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-05',
+    date: '2025-01-20',
     readTime: '7 dk',
     category: 'İş Hukuku',
     tags: ['mobbing', 'iş hukuku', 'çalışan hakları']
@@ -147,7 +147,7 @@ const blogPosts = {
       <p>Tapu devir işleminde gerekli belgeler ve prosedürler hakkında detaylı bilgi.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-28',
+    date: '2025-01-08',
     readTime: '5 dk',
     category: 'Gayrimenkul Hukuku',
     tags: ['gayrimenkul', 'alım satım', 'sözleşme']
@@ -181,7 +181,7 @@ const blogPosts = {
       <p>Belirli mirasçıların hukuki olarak korunan asgari miras payları ve saklı pay davalarının açılması.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-20',
+    date: '2025-02-14',
     readTime: '9 dk',
     category: 'Medeni Hukuk',
     tags: ['miras', 'vasiyetname', 'mirasçılık']
@@ -217,7 +217,7 @@ const blogPosts = {
       </ol>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-15',
+    date: '2025-01-30',
     readTime: '6 dk',
     category: 'Ticaret Hukuku',
     tags: ['şirket kuruluşu', 'ticaret hukuku', 'girişimcilik']
@@ -250,7 +250,7 @@ const blogPosts = {
       <p>Tazminat reddedildiğinde başvurulabilecek yollar ve dava süreci.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-20',
+    date: '2025-03-10',
     readTime: '7 dk',
     category: 'Sigorta Hukuku',
     tags: ['sigorta', 'tazminat', 'red durumu']
@@ -283,7 +283,7 @@ const blogPosts = {
       <p>İcra takibi için gerekli belgeler ve hazırlık süreci.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-12',
+    date: '2025-02-05',
     readTime: '6 dk',
     category: 'İcra İflas Hukuku',
     tags: ['icra takibi', 'alacak tahsili', 'borç']
@@ -316,7 +316,7 @@ const blogPosts = {
       <p>Tarafların hakları ve yükümlülükleri detaylı olarak açıklanmaktadır.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-08',
+    date: '2025-01-15',
     readTime: '5 dk',
     category: 'Kira Hukuku',
     tags: ['kira artışı', 'kiracı hakları', 'ev sahibi']
@@ -350,7 +350,7 @@ const blogPosts = {
       <p>Tüketici haklarının kullanılması için önemli süreler ve dikkat edilecek noktalar.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-03',
+    date: '2025-03-01',
     readTime: '6 dk',
     category: 'Tüketici Hukuku',
     tags: ['tüketici hakları', 'ayıplı mal', 'şikayet']
@@ -383,7 +383,7 @@ const blogPosts = {
       <p>Kişisel veri işleme için gerekli açık rıza şartları ve özellikleri.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-25',
+    date: '2025-02-20',
     readTime: '8 dk',
     category: 'Kişiler Hukuku',
     tags: ['KVKK', 'kişisel veri', 'gizlilik']
@@ -419,7 +419,7 @@ const blogPosts = {
       <p>Marka ve patent koruma süreleri ile yenileme işlemleri.</p>
     `,
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-18',
+    date: '2025-01-25',
     readTime: '7 dk',
     category: 'Fikri Mülkiyet',
     tags: ['marka tescili', 'patent', 'fikri mülkiyet']
@@ -576,7 +576,7 @@ export default function BlogDetailPage() {
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <a
-                    href="tel:+902121234567"
+                    href="tel:+905071129898"
                     className="inline-flex items-center px-6 py-3 bg-white text-slate-700 font-semibold rounded-full hover:bg-slate-100 transition-colors border border-slate-200"
                   >
                     Hemen Ara
@@ -606,7 +606,7 @@ export default function BlogDetailPage() {
                 </div>
               </div>
               <p className="text-slate-600 text-sm">
-                15+ yıllık deneyimi ile hukuki konularda uzman görüş ve rehberlik sağlıyor.
+               
               </p>
             </motion.div>
 
@@ -634,32 +634,7 @@ export default function BlogDetailPage() {
               </div>
             </motion.div>
 
-            {/* Newsletter */}
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="bg-slate-900 text-white p-6 rounded-3xl"
-            >
-              <h3 className="text-lg font-semibold mb-4">Güncel Kalın</h3>
-              <p className="text-slate-300 text-sm mb-4">
-                Hukuki gelişmeleri ve yeni yazıları e-posta ile alın.
-              </p>
-              <div className="space-y-3">
-                <input
-                  type="email"
-                  placeholder="E-posta adresiniz"
-                  className="w-full px-3 py-2 bg-slate-800 border border-slate-700 rounded-lg text-white placeholder-slate-400 focus:ring-2 focus:ring-slate-600 focus:border-transparent"
-                />
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full bg-white text-slate-900 py-2 rounded-lg font-medium hover:bg-slate-100 transition-colors"
-                >
-                  Abone Ol
-                </motion.button>
-              </div>
-            </motion.div>
+
           </aside>
         </div>
       </div>

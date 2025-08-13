@@ -50,20 +50,20 @@ export default function Header() {
           <div className="flex justify-between items-center text-sm">
             <div className="flex space-x-4">
               <motion.a 
-                href="tel:+902121234567" 
+                href="tel:+905071129898" 
                 className="flex items-center space-x-1 hover:text-slate-300 transition-colors"
                 whileHover={{ scale: 1.05 }}
               >
                 <Phone size={14} />
-                <span>+90 212 123 45 67</span>
+                <span>+90 507 112 98 98</span>
               </motion.a>
               <motion.a 
-                href="mailto:info@av.tr" 
+                href="mailto:info@akpinarhukuk.av.tr" 
                 className="flex items-center space-x-1 hover:text-slate-300 transition-colors"
                 whileHover={{ scale: 1.05 }}
               >
                 <Mail size={14} />
-                <span>info@av.tr</span>
+                <span>info@akpinarhukuk.av.tr</span>
               </motion.a>
             </div>
             <div className="hidden md:block">
@@ -124,7 +124,7 @@ export default function Header() {
                 className="bg-blue-500 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-600 transition-all duration-300 shadow-lg flex items-center"
               >
                 <Calendar className="w-4 h-4 mr-2" />
-                Randevu Al
+                Randevu Talep Et
               </Link>
             </motion.div>
           </div>
@@ -158,7 +158,7 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Calendar className="w-4 h-4 mr-2" />
-                Randevu Al
+                Randevu Talep Et
               </Link>
             </nav>
           </div>

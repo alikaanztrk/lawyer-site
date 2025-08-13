@@ -32,14 +32,14 @@ export default function HakkimizdaPage() {
         >
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold text-slate-900 mb-6">
-              Akpınar Hukuk Bürosu
+              Av. Işıl Bengisu Akpınar Hukuk Bürosu
             </h2>
             <div className="w-24 h-1 bg-slate-600 mx-auto rounded-full"></div>
           </div>
           
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-slate-700 leading-relaxed text-center">
-            <span className="font-semibold text-slate-800"> Akpınar Hukuk Bürosu, </span>  hukukun üstünlüğü ilkesini temel alarak, müvekkillerine kapsamlı, güvenilir ve çözüm odaklı hukuki hizmetler sunmaktadır.
+            <span className="font-semibold text-slate-800"> Av. Işıl Bengisu Akpınar Hukuk Bürosu, </span>  hukukun üstünlüğü ilkesini temel alarak, müvekkillerine kapsamlı, güvenilir ve çözüm odaklı hukuki hizmetler sunmaktadır.
              Kuruluşundan bu yana dürüstlük, şeffaflık ve profesyonellik değerlerinden ödün vermeden faaliyet gösteren büromuz,
              her müvekkilinin hukuki süreçlerini titizlikle ve etkin bir şekilde yürütmeyi hedefler.
             </p>
@@ -53,7 +53,7 @@ export default function HakkimizdaPage() {
           
             <div className="text-center mb-8">
             <h2 className="text-4xl font-bold text-slate-800 mb-6">
-              Misyonumuz
+              <br /> Misyonumuz
             </h2>
             <div className="w-24 h-1 bg-slate-600 mx-auto rounded-full"></div>
           </div>

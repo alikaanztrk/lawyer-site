@@ -186,7 +186,7 @@ export async function POST(request: NextRequest) {
 
     // E-posta gönder
     const data = await resend.emails.send({
-      from: 'Randevu Sistemi <randevu@av.tr>',
+      from: 'Randevu Sistemi <randevu@akpinarhukuk.av.tr>',
       to: ['info@akpinarhukuk.av.tr'], // Buraya gerçek e-posta adresinizi yazın
       subject: `🏛️ Yeni Randevu Talebi - ${ad} (${hukukAlanlari[hukukAlani]})`,
       html: emailHtml,
@@ -258,9 +258,9 @@ export async function POST(request: NextRequest) {
             
             <div class="contact-info">
               <h3>Acil durumlar için:</h3>
-              <p>📞 <strong>Telefon:</strong> +90 212 123 45 67</p>
-              <p>📱 <strong>WhatsApp:</strong> +90 533 123 45 67</p>
-              <p>📧 <strong>E-posta:</strong> info@av.tr</p>
+              <p>📞 <strong>Telefon:</strong> +90 507 112 98 98</p>
+              <p>📱 <strong>WhatsApp:</strong> +90 507 112 98 98</p>
+              <p>📧 <strong>E-posta:</strong> info@akpinarhukuk.av.tr</p>
             </div>
             
             <p><small>Bu e-posta otomatik olarak gönderilmiştir. Lütfen yanıtlamayın.</small></p>
@@ -271,7 +271,7 @@ export async function POST(request: NextRequest) {
 
     // Müvekkile onay e-postası gönder
     await resend.emails.send({
-      from: 'Akpınar Hukuk Bürosu <noreply@av.tr>',
+      from: 'Akpınar Hukuk Bürosu <noreply@akpinarhukuk.av.tr>',
       to: [email],
       subject: '✅ Randevu Talebiniz Alındı - Akpınar Hukuk Bürosu',
       html: confirmationHtml,

@@ -543,25 +543,25 @@ export default function ServiceDetailPage() {
               </p>
               <div className="space-y-4">
                 <motion.a
-                  href="tel:+902121234567"
+                  href="tel:+905071129898"
                   className="flex items-center p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
                   whileHover={{ scale: 1.02 }}
                 >
                   <Phone className="w-5 h-5 mr-3" />
                   <div>
                     <div className="font-medium">Hemen Arayın</div>
-                    <div className="text-sm text-slate-300">+90 212 123 45 67</div>
+                    <div className="text-sm text-slate-300">+90 507 112 98 98</div>
                   </div>
                 </motion.a>
                 <motion.a
-                  href="mailto:info@av.tr"
+                  href="mailto:info@akpinarhukuk.av.tr"
                   className="flex items-center p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-colors"
                   whileHover={{ scale: 1.02 }}
                 >
                   <Mail className="w-5 h-5 mr-3" />
                   <div>
                     <div className="font-medium">E-posta Gönderin</div>
-                    <div className="text-sm text-slate-300">info@av.tr</div>
+                    <div className="text-sm text-slate-300">info@akpinarhukuk.av.tr</div>
                   </div>
                 </motion.a>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

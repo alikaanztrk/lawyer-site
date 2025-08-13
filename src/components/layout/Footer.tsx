@@ -9,10 +9,10 @@ export default function Footer() {
           {/* Firma Bilgileri */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span className="text-blue-400">Av.</span> Işıl Bengisu Akpınar
+              Av. Işıl Bengisu Akpınar
             </div>
             <p className="text-gray-300 mb-4">
-              5 yılı aşkın deneyimi ile müvekkillerine en kaliteli hukuki hizmetleri sunan deneyimli avukat.
+            Dürüst, şeffaf ve sonuç odaklı avukatlık hizmeti sunuyoruz.
             </p>
             <div className="flex space-x-4">
               <a href="https://linkedin.com" className="text-gray-300 hover:text-blue-400 transition-colors">
@@ -52,20 +52,20 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin size={18} className="text-blue-400 mt-1 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  Nişantaşı Mahallesi, Teşvikiye Caddesi No: 123/4<br />
-                  Şişli/İstanbul
+                Koşuyolu Mh., Salih Omurtak Sk., No:79A, 34718 <br />
+                Kadıköy / İstanbul
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-blue-400" />
-                <a href="tel:+902121234567" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  +90 212 123 45 67
+                <a href="tel:+905071129898" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  +90 507 112 98 98
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-blue-400" />
-                <a href="mailto:info@av.tr" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  info@av.tr
+                <a href="mailto:info@akpinarhukuk.av.tr" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  info@akpinarhukuk.av.tr
                 </a>
               </div>
             </div>
@@ -80,12 +80,12 @@ export default function Footer() {
               </div>
               <div className="text-gray-300 text-xs">
                 <div>Pazartesi - Cuma: 09:00 - 18:00</div>
-                <div>Cumartesi: 09:00 - 14:00</div>
+                <div>Cumartesi - Pazar: Kapalı</div>
               </div>
               <div className="mt-3 pt-3 border-t border-slate-700">
-                <p className="text-blue-400 text-xs font-medium">7/24 Acil: 
-                  <a href="tel:+905331234567" className="ml-1 hover:text-blue-300">
-                    +90 533 123 45 67
+                <p className="text-blue-400 text-xs font-medium">Danışmak için: 
+                  <a href="tel:+905071129898" className="ml-1 hover:text-blue-300">
+                  +90 507 112 98 98
                   </a>
                 </p>
               </div>

@@ -21,7 +21,7 @@ export default function YasalUyariPage() {
         <div className="prose max-w-none">
           <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl mb-12">
             <p className="text-sm text-slate-600 mb-0 font-medium">
-              <strong className="text-slate-800">Son Güncellenme:</strong> 01 Ocak 2024
+              <strong className="text-slate-800">Son Güncellenme:</strong> 15 Ocak 2025
             </p>
           </div>
 
@@ -31,9 +31,9 @@ export default function YasalUyariPage() {
               <ul className="space-y-2 text-slate-700">
                 <li><strong>Site Sahibi:</strong> Av. Işıl Bengisu Akpınar</li>
                 <li><strong>Ticari Unvan:</strong> Işıl Bengisu Akpınar Hukuk Bürosu</li>
-                <li><strong>Adres:</strong> Nişantaşı Mahallesi, Teşvikiye Caddesi No: 123/4, Şişli/İstanbul</li>
-                <li><strong>Telefon:</strong> +90 212 123 45 67</li>
-                <li><strong>E-posta:</strong> info@av.tr</li>
+                <li><strong>Adres:</strong> Koşuyolu Mh, Salih Omurtak Sk, No:79A, 34718 Kadıköy/İstanbul</li>
+                <li><strong>Telefon:</strong> +90 507 112 98 98</li>
+                <li><strong>E-posta:</strong> info@akpinarhukuk.av.tr</li>
                 <li><strong>Baro Kayıt No:</strong> İstanbul Barosu - 12345</li>
                 <li><strong>Vergi Numarası:</strong> 1234567890</li>
               </ul>
@@ -173,9 +173,9 @@ export default function YasalUyariPage() {
             </p>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 rounded-lg">
               <ul className="space-y-2 text-slate-700">
-                <li><strong>E-posta:</strong> info@av.tr</li>
-                <li><strong>Telefon:</strong> +90 212 123 45 67</li>
-                <li><strong>Adres:</strong> Nişantaşı Mahallesi, Teşvikiye Caddesi No: 123/4, Şişli/İstanbul</li>
+                <li><strong>E-posta:</strong> info@akpinarhukuk.av.tr</li>
+                <li><strong>Telefon:</strong> +90 507 112 98 98</li>
+                <li><strong>Adres:</strong> Koşuyolu Mh, Salih Omurtak Sk, No:79A, 34718 Kadıköy/İstanbul</li>
               </ul>
             </div>
           </section>

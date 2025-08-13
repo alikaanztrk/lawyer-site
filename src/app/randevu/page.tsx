@@ -310,7 +310,7 @@ export default function RandevuPage() {
                 </div>
                 <div className="flex justify-between">
                   <span>Cumartesi</span>
-                  <span>09:00 - 14:00</span>
+                  <span>Kapalı</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Pazar</span>
@@ -320,7 +320,7 @@ export default function RandevuPage() {
               <div className="mt-6 pt-6 border-t border-slate-700">
                 <p className="text-sm text-slate-300">
                   <strong>Acil Durumlar:</strong><br />
-                  7/24 ulaşılabilir: +90 533 123 45 67
+                  7/24 ulaşılabilir: +90 507 112 98 98
                 </p>
               </div>
             </motion.div>
@@ -337,25 +337,25 @@ export default function RandevuPage() {
               </h3>
               <div className="space-y-4">
                 <motion.a
-                  href="tel:+902121234567"
+                  href="tel:+905071129898"
                   className="flex items-center p-4 bg-blue-50 text-blue-700 rounded-xl hover:bg-blue-100 transition-colors"
                   whileHover={{ scale: 1.02 }}
                 >
                   <Phone className="w-5 h-5 mr-3" />
                   <div>
                     <div className="font-medium">Hemen Arayın</div>
-                    <div className="text-sm">+90 212 123 45 67</div>
+                    <div className="text-sm">+90 507 112 98 98</div>
                   </div>
                 </motion.a>
                 <motion.a
-                  href="mailto:info@av.tr"
+                  href="mailto:info@akpinarhukuk.av.tr"
                   className="flex items-center p-4 bg-slate-50 text-slate-700 rounded-xl hover:bg-slate-100 transition-colors"
                   whileHover={{ scale: 1.02 }}
                 >
                   <Mail className="w-5 h-5 mr-3" />
                   <div>
                     <div className="font-medium">E-posta</div>
-                    <div className="text-sm">info@av.tr</div>
+                    <div className="text-sm">info@akpinarhukuk.av.tr</div>
                   </div>
                 </motion.a>
               </div>

@@ -11,7 +11,7 @@ const blogPosts = [
     excerpt: 'Ceza davası açma sürecinde dikkat edilmesi gereken önemli noktalar ve yasal prosedürler hakkında detaylı bilgi.',
     content: 'Ceza davası açma süreci hakkında kapsamlı rehber...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-15',
+    date: '2025-03-15',
     readTime: '8 dk',
     category: 'Ceza Hukuku',
     tags: ['ceza davası', 'hukuki süreç', 'dava açma'],
@@ -23,7 +23,7 @@ const blogPosts = [
     excerpt: 'Boşanma davası açmak için gerekli belgeler, süreç ve dikkat edilmesi gereken hukuki detaylar.',
     content: 'Boşanma davası sürecinde bilinmesi gerekenler...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-10',
+    date: '2025-02-28',
     readTime: '6 dk',
     category: 'Aile Hukuku',
     tags: ['boşanma', 'aile hukuku', 'dava süreci']
@@ -34,7 +34,7 @@ const blogPosts = [
     excerpt: 'İş yerinde mobbing yaşayanların hukuki hakları ve başvuru yolları hakkında bilmeniz gerekenler.',
     content: 'İş yerinde mobbing durumunda atılacak adımlar...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-05',
+    date: '2025-01-20',
     readTime: '7 dk',
     category: 'İş Hukuku',
     tags: ['mobbing', 'iş hukuku', 'çalışan hakları']
@@ -45,7 +45,7 @@ const blogPosts = [
     excerpt: 'Gayrimenkul alım satım işlemlerinde dikkat edilmesi gereken hukuki noktalar ve güvenli alışveriş.',
     content: 'Gayrimenkul alım satım sözleşmelerinde dikkat edilecek noktalar...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-28',
+    date: '2025-01-08',
     readTime: '5 dk',
     category: 'Gayrimenkul Hukuku',
     tags: ['gayrimenkul', 'alım satım', 'sözleşme']
@@ -56,7 +56,7 @@ const blogPosts = [
     excerpt: 'Miras hukuku kapsamında mirasçılık hakları, vasiyetname düzenleme ve miras paylaşımı.',
     content: 'Miras hukuku ve mirasçılık hakları hakkında detaylar...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-20',
+    date: '2025-02-14',
     readTime: '9 dk',
     category: 'Medeni Hukuk',
     tags: ['miras', 'vasiyetname', 'mirasçılık']
@@ -67,7 +67,7 @@ const blogPosts = [
     excerpt: 'Şirket kuruluş sürecinde atılması gereken hukuki adımlar ve gerekli belgeler hakkında rehber.',
     content: 'Şirket kuruluş sürecindeki hukuki gereklilikler...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-15',
+    date: '2025-01-30',
     readTime: '6 dk',
     category: 'Ticaret Hukuku',
     tags: ['şirket kuruluşu', 'ticaret hukuku', 'girişimcilik']
@@ -78,7 +78,7 @@ const blogPosts = [
     excerpt: 'Sigorta şirketlerinden tazminat alma süreci, red durumlarında hukuki haklarınız ve başvuru yolları.',
     content: 'Sigorta tazminatı alma süreçleri ve hukuki yollar...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-20',
+    date: '2025-03-10',
     readTime: '7 dk',
     category: 'Sigorta Hukuku',
     tags: ['sigorta', 'tazminat', 'red durumu']
@@ -89,7 +89,7 @@ const blogPosts = [
     excerpt: 'Alacaklıların icra takibi başlatma süreci, gerekli belgeler ve takip edilecek adımlar.',
     content: 'İcra takibi ve alacak tahsili süreçleri...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-12',
+    date: '2025-02-05',
     readTime: '6 dk',
     category: 'İcra İflas Hukuku',
     tags: ['icra takibi', 'alacak tahsili', 'borç']
@@ -100,7 +100,7 @@ const blogPosts = [
     excerpt: 'Kira artışı uyuşmazlıklarında tarafların hakları, yasal oranlar ve dava süreçleri.',
     content: 'Kira artışı davalarında bilinmesi gerekenler...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-08',
+    date: '2025-01-15',
     readTime: '5 dk',
     category: 'Kira Hukuku',
     tags: ['kira artışı', 'kiracı hakları', 'ev sahibi']
@@ -111,7 +111,7 @@ const blogPosts = [
     excerpt: 'Satın aldığınız mal veya hizmette sorun yaşadığınızda tüketici haklarınız ve başvuru yolları.',
     content: 'Tüketici hakları ve şikayet süreçleri...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2024-01-03',
+    date: '2025-03-01',
     readTime: '6 dk',
     category: 'Tüketici Hukuku',
     tags: ['tüketici hakları', 'ayıplı mal', 'şikayet']
@@ -122,7 +122,7 @@ const blogPosts = [
     excerpt: 'Kişisel Verilerin Korunması Kanunu kapsamında sahip olduğunuz haklar ve ihlal durumunda yapılacaklar.',
     content: 'KVKK hakları ve kişisel veri korunması...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-25',
+    date: '2025-02-20',
     readTime: '8 dk',
     category: 'Kişiler Hukuku',
     tags: ['KVKK', 'kişisel veri', 'gizlilik']
@@ -133,7 +133,7 @@ const blogPosts = [
     excerpt: 'Marka tescil süreci, fikri mülkiyet haklarının korunması ve ihlal durumlarında yapılacaklar.',
     content: 'Marka tescili ve fikri mülkiyet korunması...',
     author: 'Av. Işıl Bengisu Akpınar',
-    date: '2023-12-18',
+    date: '2025-01-25',
     readTime: '7 dk',
     category: 'Fikri Mülkiyet',
     tags: ['marka tescili', 'patent', 'fikri mülkiyet']

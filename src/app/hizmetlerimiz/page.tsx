@@ -349,10 +349,10 @@ export default function HizmetlerimizPage() {
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <a
-                href="tel:+902121234567"
+                href="tel:+905071129898"
                 className="inline-flex items-center px-8 py-4 bg-white text-slate-800 font-bold rounded-full hover:bg-slate-100 transition-all duration-300 shadow-lg hover:shadow-xl border border-slate-200"
               >
-                Hemen Ara: +90 212 123 45 67
+                Hemen Ara: +90 507 112 98 98
               </a>
             </motion.div>
           </div>

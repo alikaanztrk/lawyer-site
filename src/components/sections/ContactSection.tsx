@@ -48,8 +48,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900">Telefon</h4>
-                    <a href="tel:+902121234567" className="text-slate-600 hover:text-slate-900 transition-colors">
-                      +90 212 123 45 67
+                    <a href="tel:+905071129898" className="text-slate-600 hover:text-slate-900 transition-colors">
+                      +90 507 112 98 98
                     </a>
                   </div>
                 </motion.div>
@@ -63,8 +63,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900">E-posta</h4>
-                    <a href="mailto:info@av.tr" className="text-slate-600 hover:text-slate-900 transition-colors">
-                      info@av.tr
+                    <a href="mailto:info@akpinarhukuk.av.tr" className="text-slate-600 hover:text-slate-900 transition-colors">
+                      info@akpinarhukuk.av.tr
                     </a>
                   </div>
                 </motion.div>
@@ -79,7 +79,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold text-slate-900">WhatsApp</h4>
                     <a 
-                      href="https://wa.me/905331234567" 
+                      href="https://wa.me/905071129898" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-green-600 hover:text-green-700 transition-colors font-medium"
@@ -101,13 +101,12 @@ export default function ContactSection() {
               <h4 className="text-lg font-semibold mb-3">Çalışma Saatleri</h4>
               <div className="space-y-2 text-slate-300">
                 <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                <p>Cumartesi: 09:00 - 14:00</p>
-                <p>Pazar: Kapalı</p>
+                <p>Cumartesi / Pazar: Kapalı</p>
               </div>
               <div className="mt-4 pt-4 border-t border-slate-700">
                 <p className="text-sm text-slate-300">
-                  <span className="text-slate-100 font-medium">Acil Durumlar:</span><br />
-                  +90 533 123 45 67
+                  <span className="text-slate-100 font-medium">Danışmak için:</span><br />
+                  +90 507 112 98 98
                 </p>
               </div>
             </motion.div>

@@ -17,11 +17,11 @@
     "sosyal_resim": "/images/og-image.jpg"
   },
   "iletisim": {
-    "ana_telefon": "+90 212 123 45 67",
-    "whatsapp": "+90 533 123 45 67", 
-    "email": "info@av.tr",
+    "ana_telefon": "+90 507 112 98 98",
+    "whatsapp": "+90 507 112 98 98", 
+    "email": "info@akpinarhukuk.av.tr",
     "adres": {
-      "tam_adres": "Nişantaşı Mahallesi, Teşvikiye Caddesi No: 123/4, Şişli/İstanbul",
+      "tam_adres": "Koşuyolu Mh, Salih Omurtak Sk, No:79A, 34718 Kadıköy / İstanbul",
       "google_maps_embed": "https://maps.google.com/embed?...",
       "lat": 41.0527,
       "lng": 28.9956
@@ -32,7 +32,7 @@
       "carsamba": "09:00-18:00",
       "persembe": "09:00-18:00",
       "cuma": "09:00-18:00",
-      "cumartesi": "09:00-14:00",
+      "cumartesi": "Kapalı",
       "pazar": "Kapalı"
     }
   },
@@ -53,7 +53,7 @@
     "ev_ofis_ziyaret": true
   },
   "seo": {
-    "google_analytics": "G-XXXXXXXXXX",
+    "google_analytics": "G-YYCPF830CS",
     "google_tag_manager": "GTM-XXXXXXX",
     "facebook_pixel": "000000000000000",
     "yandex_metrica": "00000000"

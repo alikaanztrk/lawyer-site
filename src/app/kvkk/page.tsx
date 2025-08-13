@@ -21,7 +21,7 @@ export default function KVKKPage() {
         <div className="prose max-w-none">
           <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl mb-12">
             <p className="text-sm text-slate-600 mb-0 font-medium">
-              <strong className="text-slate-800">Son Güncellenme:</strong> 01 Ocak 2024
+              <strong className="text-slate-800">Son Güncellenme:</strong> 15 Ocak 2025
             </p>
           </div>
 
@@ -29,8 +29,8 @@ export default function KVKKPage() {
             <h2 className="text-3xl font-bold text-slate-900 mb-6">1. Veri Sorumlusu</h2>
             <p className="text-slate-700 leading-relaxed">
               6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) uyarınca, kişisel verileriniz; 
-              veri sorumlusu olarak <strong>Av. Işıl Bengisu Akpınar Hukuk Bürosu</strong> (Nişantaşı Mahallesi, 
-              Teşvikiye Caddesi No: 123/4, Şişli/İstanbul) tarafından aşağıda açıklanan kapsamda işlenebilecektir.
+              veri sorumlusu olarak <strong>Av. Işıl Bengisu Akpınar Hukuk Bürosu</strong> (Koşuyolu Mh, 
+              Salih Omurtak Sk, No:79A, 34718 Kadıköy/İstanbul) tarafından aşağıda açıklanan kapsamda işlenebilecektir.
             </p>
           </section>
 
@@ -126,9 +126,9 @@ export default function KVKKPage() {
             </p>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 rounded-lg">
               <ul className="space-y-2 text-slate-700">
-                <li><strong>E-posta:</strong> info@av.tr</li>
-                <li><strong>Posta:</strong> Nişantaşı Mahallesi, Teşvikiye Caddesi No: 123/4, Şişli/İstanbul</li>
-                <li><strong>Telefon:</strong> +90 212 123 45 67</li>
+                <li><strong>E-posta:</strong> info@akpinarhukuk.av.tr</li>
+                <li><strong>Posta:</strong> Koşuyolu Mh, Salih Omurtak Sk, No:79A, 34718 Kadıköy/İstanbul</li>
+                <li><strong>Telefon:</strong> +90 507 112 98 98</li>
               </ul>
             </div>
             <p className="text-slate-700 leading-relaxed mt-4">
@@ -140,8 +140,8 @@ export default function KVKKPage() {
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">9. İletişim</h2>
             <p className="text-slate-700 leading-relaxed">
-              KVKK kapsamındaki sorularınız için <strong>info@av.tr</strong> e-posta adresinden 
-              veya <strong>+90 212 123 45 67</strong> telefon numarasından bizimle iletişime geçebilirsiniz.
+              KVKK kapsamındaki sorularınız için <strong>info@akpinarhukuk.av.tr</strong> e-posta adresinden 
+              veya <strong>+90 507 112 98 98</strong> telefon numarasından bizimle iletişime geçebilirsiniz.
             </p>
           </section>
         </div>

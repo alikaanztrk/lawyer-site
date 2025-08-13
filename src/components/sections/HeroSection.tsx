@@ -115,7 +115,7 @@ export default function HeroSection() {
                 </Button>
               </motion.div>
             </Link>
-            <a href="tel:+902121234567">
+            <a href="tel:+905071129898">
               <motion.div
                 whileHover={{ scale: 1.05, rotateY: -5 }}
                 whileTap={{ scale: 0.95 }}
@@ -123,7 +123,7 @@ export default function HeroSection() {
               >
                 <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-md px-8 py-4 rounded-full transition-all duration-300 shadow-xl">
                   <Phone className="w-5 h-5 mr-2" />
-                  +90 212 123 45 67
+                  +90 507 112 98 98
                 </Button>
               </motion.div>
             </a>

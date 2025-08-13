@@ -46,12 +46,9 @@ export default function IletisimPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900">Telefon</h4>
-                    <a href="tel:+902121234567" className="text-slate-600 hover:text-slate-900 transition-colors">
-                      +90 212 123 45 67
+                    <a href="tel:+905071129898" className="text-slate-600 hover:text-slate-900 transition-colors">
+                      +90 507 112 98 98
                     </a>
-                    <p className="text-sm text-slate-500 mt-1">
-                      Acil: +90 533 123 45 67
-                    </p>
                   </div>
                 </motion.div>
 
@@ -64,8 +61,8 @@ export default function IletisimPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900">E-posta</h4>
-                    <a href="mailto:info@av.tr" className="text-slate-600 hover:text-slate-900 transition-colors">
-                      info@av.tr
+                    <a href="mailto:info@akpinarhukuk.av.tr" className="text-slate-600 hover:text-slate-900 transition-colors">
+                      info@akpinarhukuk.av.tr
                     </a>
                     <p className="text-sm text-slate-500 mt-1">
                       24 saat içinde yanıt
@@ -83,7 +80,7 @@ export default function IletisimPage() {
                   <div>
                     <h4 className="font-semibold text-slate-900">WhatsApp</h4>
                     <a 
-                      href="https://wa.me/905331234567" 
+                      href="https://wa.me/905071129898" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-green-600 hover:text-green-700 transition-colors font-medium"
@@ -106,9 +103,9 @@ export default function IletisimPage() {
                   <div>
                     <h4 className="font-semibold text-slate-900">Adres</h4>
                     <p className="text-slate-600">
-                      Nişantaşı Mahallesi<br />
-                      Teşvikiye Caddesi No: 123/4<br />
-                      Şişli/İstanbul
+                      Koşuyolu Mahallesi
+                      Salih Omurtak Sokak, No:79A<br />
+                      Kadıköy/İstanbul
                     </p>
                   </div>
                 </motion.div>
@@ -128,13 +125,13 @@ export default function IletisimPage() {
               </h4>
               <div className="space-y-2 text-slate-300">
                 <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                <p>Cumartesi: 09:00 - 14:00</p>
+                <p>Cumartesi: Kapalı</p>
                 <p>Pazar: Kapalı</p>
               </div>
               <div className="mt-4 pt-4 border-t border-slate-700">
                 <p className="text-sm text-slate-300">
                   <span className="text-slate-100 font-medium">Acil Durumlar:</span><br />
-                  7/24 ulaşılabilir: +90 533 123 45 67
+                  7/24 ulaşılabilir: +90 507 112 98 98
                 </p>
               </div>
             </motion.div>
@@ -242,7 +239,7 @@ export default function IletisimPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 mt-3">
                   <motion.a
-                    href="tel:+902121234567"
+                    href="tel:+905071129898"
                     className="flex-1 bg-blue-50 text-blue-700 py-3 px-4 rounded-lg font-medium hover:bg-blue-100 transition-colors text-center"
                     whileHover={{ scale: 1.02 }}
                   >
@@ -250,7 +247,7 @@ export default function IletisimPage() {
                     Hemen Ara
                   </motion.a>
                   <motion.a
-                    href="https://wa.me/905331234567"
+                    href="https://wa.me/905071129898"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 bg-green-50 text-green-700 py-3 px-4 rounded-lg font-medium hover:bg-green-100 transition-colors text-center"
@@ -283,17 +280,16 @@ export default function IletisimPage() {
                   Av. Işıl Bengisu Akpınar Hukuk Bürosu
                 </h3>
                 <p className="text-slate-600">
-                  Nişantaşı Mahallesi<br />
-                  Teşvikiye Caddesi No: 123/4<br />
-                  34367 Şişli/İstanbul
+                  Koşuyolu Mahallesi Salih Omurtak Sokak, No:79A<br />
+                  Kadıköy/İstanbul
                 </p>
               </div>
               
               <div className="text-center lg:text-left">
                 <h4 className="font-semibold text-slate-900 mb-2">Ulaşım</h4>
                 <p className="text-slate-600 text-sm">
-                  • Metro: Osmanbey (5 dk yürüme)<br />
-                  • Otobüs: Teşvikiye durağı<br />
+                  • Metro <br />
+                  • Otobüs<br />
                   • Özel araç park imkanı mevcut
                 </p>
               </div>
@@ -304,7 +300,7 @@ export default function IletisimPage() {
                 className="text-center lg:text-left"
               >
                 <a
-                  href="https://www.google.com/maps/dir//Nişantaşı,+Teşvikiye+Cd.+No:123,+34367+Şişli/İstanbul"
+                  href="https://www.google.com/maps/dir//Koşuyolu+Mh,+Salih+Omurtak+Sk,+No:79A,+34718+Kadıköy/İstanbul"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors"
@@ -316,54 +312,23 @@ export default function IletisimPage() {
             </div>
 
             <div className="lg:col-span-2">
-              <div className="bg-slate-200 rounded-2xl h-80 flex items-center justify-center">
-                <div className="text-center text-slate-500">
-                  <MapPin className="w-12 h-12 mx-auto mb-4" />
-                  <p>Interaktif harita entegrasyonu</p>
-                  <p className="text-sm">Google Maps API ile geliştirilecek</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg h-80">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.7867467498904!2d29.03429157674725!3d41.0080405713506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab976d2041afd%3A0x2db9c19996887258!2zQXYuIEnFn8SxbCBCZW5naXN1IEFrcMSxbmFyIEh1a3VrIELDvHJvc3U!5e0!3m2!1str!2str!4v1755082699795!5m2!1str!2str" 
+                  width="100%" 
+                  height="100%" 
+                  style={{border: 0}} 
+                  allowFullScreen={true}
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Av. Işıl Bengisu Akpınar Hukuk Bürosu Konum"
+                />
               </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Randevu Bölümü */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-16 bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 lg:p-12 text-white text-center"
-        >
-          <Calendar className="w-16 h-16 mx-auto mb-6 text-white" />
-          <h2 className="text-3xl font-bold mb-6">
-            Randevu Alın, Hukuki Sorunlarınızı Çözün
-          </h2>
-          <p className="text-slate-200 text-lg mb-8 max-w-2xl mx-auto">
-            İlk görüşme ücretsizdir. Durumunuzu değerlendirip, size en uygun hukuki çözümü sunuyoruz.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.a
-              href="tel:+902121234567"
-              className="inline-flex items-center px-8 py-4 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-100 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              Hemen Ara
-            </motion.a>
-            <motion.a
-              href="https://wa.me/905331234567"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 bg-green-600 text-white font-bold rounded-full hover:bg-green-700 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              WhatsApp Randevu
-            </motion.a>
-          </div>
-        </motion.div>
+
       </div>
     </div>
   );
