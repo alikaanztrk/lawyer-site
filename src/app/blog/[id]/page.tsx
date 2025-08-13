@@ -5,6 +5,8 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Calendar, Clock, User, Tag, Share2, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { ArticleSchema } from '@/components/seo/StructuredData';
+import Head from 'next/head';
 
 // Blog verilerini buraya dahil ediyoruz (gerçek uygulamada API'den gelecek)
 const blogPosts = {
@@ -445,8 +447,35 @@ export default function BlogDetailPage() {
   }
 
   return (
-    <div className="py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <>
+      <Head>
+        <title>{post.title} | Av. Işıl Bengisu Akpınar Blog</title>
+        <meta name="description" content={post.excerpt} />
+        <meta name="keywords" content={post.tags.join(', ')} />
+        <meta name="author" content={post.author} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://akpinarhukuk.av.tr/blog/${post.id}`} />
+        <meta property="article:author" content={post.author} />
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:section" content={post.category} />
+        {post.tags.map(tag => (
+          <meta key={tag} property="article:tag" content={tag} />
+        ))}
+      </Head>
+      
+      <ArticleSchema
+        title={post.title}
+        description={post.excerpt}
+        author={post.author}
+        datePublished={post.date}
+        dateModified={post.date}
+        url={`https://akpinarhukuk.av.tr/blog/${post.id}`}
+      />
+
+      <div className="py-24 bg-white">
+        <div className="container mx-auto px-4">
         {/* Back Button */}
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
@@ -639,5 +668,6 @@ export default function BlogDetailPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

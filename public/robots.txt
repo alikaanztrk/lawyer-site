@@ -1,25 +1,34 @@
 User-agent: *
 Allow: /
 
-# Important pages
+# Sitemaps
+Sitemap: https://akpinarhukuk.av.tr/sitemap.xml
+
+# Ana sayfalar - yüksek öncelik
+Allow: /
 Allow: /hakkimizda
 Allow: /hizmetlerimiz
 Allow: /iletisim
 Allow: /blog
 
-# Legal pages
+# Hizmet sayfaları
+Allow: /hizmetlerimiz/*
+
+# Blog sayfaları  
+Allow: /blog/*
+
+# Yasal sayfalar
 Allow: /kvkk
 Allow: /gizlilik-politikasi
 Allow: /yasal-uyari
 
-# Disallow admin or private areas
-Disallow: /admin/
-Disallow: /private/
-Disallow: /_next/
+# API endpoint'leri engelle
 Disallow: /api/
 
-# Sitemap location
-Sitemap: https://av.tr/sitemap.xml
+# Private dosyalar
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /src/
 
-# Crawl delay for respectful crawling
+# Crawl delay (nazik bot davranışı)
 Crawl-delay: 1

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://av.tr';
+  const baseUrl = 'https://akpinarhukuk.av.tr';
   
   return [
     {
@@ -76,6 +76,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/hizmetlerimiz/sigorta-hukuku`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    // Blog yazıları
+    {
+      url: `${baseUrl}/blog/1`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/2`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/3`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly', 
+      priority: 0.6,
     },
     // Yasal sayfalar
     {
