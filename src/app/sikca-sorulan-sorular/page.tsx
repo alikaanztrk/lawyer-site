@@ -1,13 +1,10 @@
-import { Metadata } from 'next';
+'use client';
+
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { HelpCircle, Users, Scale, Briefcase, Home, Heart, FileText, Shield } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Sıkça Sorulan Sorular | Av. Işıl Bengisu Akpınar',
-  description: 'Hukuki süreçler hakkında aklınıza takılan soruları yanıtlıyoruz. Boşanma, ceza, iş hukuku ve daha fazlası hakkında bilgi alın.',
-  keywords: ['sss', 'sıkça sorulan sorular', 'hukuki sorular', 'avukat sorular', 'boşanma soruları', 'ceza hukuku', 'iş hukuku'],
-};
+// Metadata'yı layout.tsx'de tanımlarız
 
 const faqCategories = [
   {
@@ -166,13 +163,13 @@ export default function SSSSayfasi() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 lg:p-12 text-white text-center"
+          className="bg-slate-50 border border-slate-200 rounded-3xl p-8 lg:p-12 text-center"
         >
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-2xl font-semibold text-slate-900 mb-4">
             Aradığınız Cevabı Bulamadınız mı?
           </h2>
           
-          <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-slate-600 text-lg mb-8 max-w-2xl mx-auto">
             Her hukuki durum kendine özgüdür. Kişisel durumunuza özel danışmanlık için 
             bizimle iletişime geçin.
           </p>
@@ -180,19 +177,19 @@ export default function SSSSayfasi() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/iletisim">
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-50 transition-colors"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="px-8 py-4 bg-slate-900 text-white font-medium rounded-lg hover:bg-slate-800 transition-colors"
               >
-                İletişime Geçin
+                Hemen Danışın
               </motion.button>
             </Link>
             
             <Link href="/randevu">
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-blue-500 text-white font-bold rounded-full hover:bg-blue-400 transition-colors border-2 border-blue-400"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="px-8 py-4 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-50 transition-colors border border-slate-300"
               >
                 Randevu Alın
               </motion.button>

@@ -22,15 +22,36 @@ export default function HeroSection() {
         {/* 3D Overlay Efektleri */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/40 via-slate-900/25 to-slate-900/40"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/10 to-slate-900/30"></div>
-        {/* Animated Particles */}
+        {/* Animated Particles - Sabit pozisyonlar kullanılıyor */}
         <div className="absolute inset-0">
-          {[...Array(20)].map((_, i) => (
+          {[
+            { left: '15%', top: '20%', delay: 0 },
+            { left: '85%', top: '35%', delay: 0.3 },
+            { left: '45%', top: '15%', delay: 0.6 },
+            { left: '75%', top: '60%', delay: 0.9 },
+            { left: '25%', top: '70%', delay: 1.2 },
+            { left: '90%', top: '25%', delay: 1.5 },
+            { left: '10%', top: '80%', delay: 1.8 },
+            { left: '60%', top: '45%', delay: 0.2 },
+            { left: '35%', top: '90%', delay: 0.5 },
+            { left: '80%', top: '10%', delay: 0.8 },
+            { left: '50%', top: '75%', delay: 1.1 },
+            { left: '20%', top: '40%', delay: 1.4 },
+            { left: '70%', top: '85%', delay: 1.7 },
+            { left: '40%', top: '30%', delay: 0.1 },
+            { left: '95%', top: '50%', delay: 0.4 },
+            { left: '5%', top: '65%', delay: 0.7 },
+            { left: '65%', top: '20%', delay: 1.0 },
+            { left: '30%', top: '55%', delay: 1.3 },
+            { left: '85%', top: '75%', delay: 1.6 },
+            { left: '55%', top: '35%', delay: 1.9 }
+          ].map((particle, i) => (
             <motion.div
               key={i}
               className="absolute w-1 h-1 bg-white/30 rounded-full"
               style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
+                left: particle.left,
+                top: particle.top,
               }}
               animate={{
                 y: [0, -10, 0],
@@ -38,9 +59,9 @@ export default function HeroSection() {
                 scale: [1, 1.2, 1],
               }}
               transition={{
-                duration: 3 + Math.random() * 2,
+                duration: 4,
                 repeat: Infinity,
-                delay: Math.random() * 2,
+                delay: particle.delay,
               }}
             />
           ))}

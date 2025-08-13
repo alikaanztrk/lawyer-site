@@ -56,6 +56,55 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <url>
+    <loc>https://akpinarhukuk.av.tr/sss/ceza-hukuku</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://akpinarhukuk.av.tr/sss/is-hukuku</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://akpinarhukuk.av.tr/sss/miras-hukuku</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://akpinarhukuk.av.tr/sss/gayrimenkul-hukuku</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://akpinarhukuk.av.tr/sss/ticaret-hukuku</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://akpinarhukuk.av.tr/sss/sigorta-hukuku</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://akpinarhukuk.av.tr/sss/icra-iflas</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Blog -->
   <url>
