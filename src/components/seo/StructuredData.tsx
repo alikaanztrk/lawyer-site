@@ -151,3 +151,36 @@ export function ArticleSchema(props: ArticleSchemaProps) {
     />
   );
 }
+
+interface FAQSchemaProps {
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
+  pageTitle: string;
+  category: string;
+}
+
+export function FAQSchema(props: FAQSchemaProps) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "name": props.pageTitle,
+    "description": `${props.category} alanında sıkça sorulan sorular ve cevapları`,
+    "mainEntity": props.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  );
+}

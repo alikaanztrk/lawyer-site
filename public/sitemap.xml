@@ -33,6 +33,30 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- SSS -->
+  <url>
+    <loc>https://akpinarhukuk.av.tr/sikca-sorulan-sorular</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Hukuki Sözlük -->
+  <url>
+    <loc>https://akpinarhukuk.av.tr/hukuki-sozluk</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- SSS Kategorileri -->
+  <url>
+    <loc>https://akpinarhukuk.av.tr/sss/bosanma-hukuku</loc>
+    <lastmod>2025-01-15T12:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://akpinarhukuk.av.tr/blog</loc>

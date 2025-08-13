@@ -23,6 +23,8 @@ export default function Header() {
     { name: 'Ana Sayfa', href: '/' },
     { name: 'Hakkımızda', href: '/hakkimizda' },
     { name: 'Hizmetlerimiz', href: '/hizmetlerimiz' },
+    { name: 'SSS', href: '/sikca-sorulan-sorular' },
+    { name: 'Sözlük', href: '/hukuki-sozluk' },
     { name: 'Blog', href: '/blog' },
     { name: 'İletişim', href: '/iletisim' },
   ];
