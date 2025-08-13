@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Search, BookOpen, Filter, Heart, Share2, Printer, Copy, CheckCircle } from 'lucide-react';
+import { Search, BookOpen, Filter, Heart, Share2, Printer, Copy, CheckCircle, Grid3X3, List, ChevronDown, Eye } from 'lucide-react';
 
 const hukukiTerimler = [
   // A Harfi
@@ -395,10 +395,25 @@ export default function HukukiSozluk() {
   const [seciliKategori, setSeciliKategori] = useState<string | null>(null);
   const [favoriler, setFavoriler] = useState<string[]>([]);
   const [kopyalananTerim, setKopyalananTerim] = useState<string | null>(null);
+  const [gorunenTerimSayisi, setGorunenTerimSayisi] = useState(10); // Mobilde lazy loading için
+  const [kompaktMod, setKompaktMod] = useState(false); // Kompakt görünüm
 
   // Benzersiz kategorileri çıkarıyoruz
   const kategoriler = useMemo(() => {
     return Array.from(new Set(hukukiTerimler.map(terim => terim.kategori)));
+  }, []);
+
+  // Mobil cihazlarda otomatik kompakt mod
+  useEffect(() => {
+    const checkScreenSize = () => {
+      if (typeof window !== 'undefined') {
+        setKompaktMod(window.innerWidth < 768); // md breakpoint
+      }
+    };
+    
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
   // Filtrelenmiş terimleri hesaplıyoruz
@@ -489,7 +504,7 @@ export default function HukukiSozluk() {
             <BookOpen className="w-8 h-8 text-blue-600" />
           </div>
           
-          <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-slate-900 mb-4 lg:mb-6">
             Hukuki Terimler Sözlüğü
           </h1>
           
@@ -537,11 +552,11 @@ export default function HukukiSozluk() {
 
           {/* Harf Filtreleri */}
           <div className="mb-6">
-            <h3 className="text-lg font-semibold text-slate-900 mb-4 text-center">Alfabetik Gezinme</h3>
-            <div className="flex flex-wrap justify-center gap-2">
+            <h3 className="text-base lg:text-lg font-semibold text-slate-900 mb-3 lg:mb-4 text-center">Alfabetik Gezinme</h3>
+            <div className="flex flex-wrap justify-center gap-1 lg:gap-2">
               <button
                 onClick={() => setSeciliHarf(null)}
-                className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                className={`px-3 lg:px-4 py-2 rounded-lg font-medium transition-colors text-sm lg:text-base ${
                   seciliHarf === null 
                     ? 'bg-blue-600 text-white' 
                     : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
@@ -553,7 +568,7 @@ export default function HukukiSozluk() {
                 <button
                   key={harf}
                   onClick={() => setSeciliHarf(harf)}
-                  className={`w-12 h-12 rounded-lg font-bold transition-colors ${
+                  className={`w-10 h-10 lg:w-12 lg:h-12 rounded-lg font-bold transition-colors text-sm lg:text-base ${
                     seciliHarf === harf 
                       ? 'bg-blue-600 text-white' 
                       : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
@@ -596,37 +611,79 @@ export default function HukukiSozluk() {
           </div>
 
           {/* Ekstra Filtreler ve Araçlar */}
-          <div className="max-w-4xl mx-auto mt-6 flex flex-wrap justify-center gap-4">
-            <button
-              onClick={() => {
-                if (favoriler.length > 0) {
-                  // Sadece favorileri göster
-                  setAramaMetni('');
-                  setSeciliHarf(null);
-                  setSeciliKategori(null);
-                  // Favori filtreleme için özel durum
-                } else {
-                  alert('Henüz favori teriminiz bulunmuyor!');
-                }
-              }}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center gap-2 ${
-                favoriler.length > 0 
-                  ? 'bg-red-100 text-red-700 hover:bg-red-200' 
-                  : 'bg-slate-100 text-slate-400 cursor-not-allowed'
-              }`}
-              disabled={favoriler.length === 0}
-            >
-              <Heart className="w-4 h-4" />
-              Favorilerim ({favoriler.length})
-            </button>
-            
-            <button
-              onClick={yazdır}
-              className="px-4 py-2 rounded-lg font-medium transition-colors bg-slate-100 text-slate-600 hover:bg-slate-200 flex items-center gap-2"
-            >
-              <Printer className="w-4 h-4" />
-              Yazdır
-            </button>
+          <div className="max-w-4xl mx-auto mt-6">
+            {/* Üst Sıra - Favoriler ve Yazdır */}
+            <div className="flex flex-wrap justify-center gap-4 mb-4">
+              <button
+                onClick={() => {
+                  if (favoriler.length > 0) {
+                    // Sadece favorileri göster
+                    setAramaMetni('');
+                    setSeciliHarf(null);
+                    setSeciliKategori(null);
+                    // Favori filtreleme için özel durum
+                  } else {
+                    alert('Henüz favori teriminiz bulunmuyor!');
+                  }
+                }}
+                className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center gap-2 ${
+                  favoriler.length > 0 
+                    ? 'bg-red-100 text-red-700 hover:bg-red-200' 
+                    : 'bg-slate-100 text-slate-400 cursor-not-allowed'
+                }`}
+                disabled={favoriler.length === 0}
+              >
+                <Heart className="w-4 h-4" />
+                <span className="hidden sm:inline">Favorilerim</span> ({favoriler.length})
+              </button>
+              
+              <button
+                onClick={yazdır}
+                className="px-4 py-2 rounded-lg font-medium transition-colors bg-slate-100 text-slate-600 hover:bg-slate-200 flex items-center gap-2"
+              >
+                <Printer className="w-4 h-4" />
+                <span className="hidden sm:inline">Yazdır</span>
+              </button>
+            </div>
+
+            {/* Alt Sıra - Görünüm Modları (Mobil İçin) */}
+            <div className="flex flex-wrap justify-center gap-2 md:gap-4">
+              <div className="flex bg-slate-100 rounded-lg p-1">
+                <button
+                  onClick={() => setKompaktMod(false)}
+                  className={`px-3 py-2 rounded-md font-medium transition-colors flex items-center gap-2 text-sm ${
+                    !kompaktMod 
+                      ? 'bg-white text-slate-900 shadow-sm' 
+                      : 'text-slate-600'
+                  }`}
+                >
+                  <List className="w-4 h-4" />
+                  <span className="hidden sm:inline">Detaylı</span>
+                </button>
+                <button
+                  onClick={() => setKompaktMod(true)}
+                  className={`px-3 py-2 rounded-md font-medium transition-colors flex items-center gap-2 text-sm ${
+                    kompaktMod 
+                      ? 'bg-white text-slate-900 shadow-sm' 
+                      : 'text-slate-600'
+                  }`}
+                >
+                  <Grid3X3 className="w-4 h-4" />
+                  <span className="hidden sm:inline">Kompakt</span>
+                </button>
+              </div>
+
+              {/* Mobilde Daha Fazla Göster Butonu */}
+              {filtrelenmisTerimler.length > gorunenTerimSayisi && !seciliHarf && (
+                <button
+                  onClick={() => setGorunenTerimSayisi(prev => prev + 10)}
+                  className="px-4 py-2 rounded-lg font-medium transition-colors bg-blue-100 text-blue-700 hover:bg-blue-200 flex items-center gap-2 text-sm"
+                >
+                  <Eye className="w-4 h-4" />
+                  {gorunenTerimSayisi} / {filtrelenmisTerimler.length} Gösteriliyor
+                </button>
+              )}
+            </div>
           </div>
         </motion.div>
 
@@ -650,30 +707,100 @@ export default function HukukiSozluk() {
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Hiç sonuç bulunamadı</h3>
               <p className="text-slate-600">Farklı bir arama terimi deneyin veya filtreleri temizleyin.</p>
             </div>
+          ) : kompaktMod ? (
+            /* KOMPAKT GÖRÜNÜM - Mobil İçin */
+            <div className="grid gap-3 sm:gap-4">
+              {filtrelenmisTerimler.slice(0, gorunenTerimSayisi).map((terim, index) => (
+                <motion.div
+                  key={`kompakt-${index}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  className="bg-white p-4 rounded-xl shadow-sm border border-slate-100"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold text-slate-900 mb-1 truncate">
+                        {terim.terim}
+                      </h3>
+                      <p className="text-slate-600 text-sm mb-2 overflow-hidden" style={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical'
+                      }}>
+                        {terim.tanimı}
+                      </p>
+                      <span className="inline-block px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded">
+                        {terim.kategori}
+                      </span>
+                    </div>
+                    
+                    {/* Kompakt Aksiyon Butonları */}
+                    <div className="flex gap-2 flex-shrink-0">
+                      <button
+                        onClick={() => favoriyeEkle(terim.terim)}
+                        className={`p-2 rounded-lg transition-colors ${
+                          favoriler.includes(terim.terim)
+                            ? 'bg-red-100 text-red-700'
+                            : 'bg-slate-100 text-slate-600'
+                        }`}
+                      >
+                        <Heart className={`w-4 h-4 ${favoriler.includes(terim.terim) ? 'fill-current' : ''}`} />
+                      </button>
+                      
+                      <button
+                        onClick={() => terimiKopyala(terim.terim, terim.tanimı)}
+                        className="p-2 rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-colors"
+                      >
+                        {kopyalananTerim === terim.terim ? (
+                          <CheckCircle className="w-4 h-4 text-green-600" />
+                        ) : (
+                          <Copy className="w-4 h-4" />
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+              
+              {/* Daha Fazla Yükle Butonu */}
+              {filtrelenmisTerimler.length > gorunenTerimSayisi && (
+                <motion.button
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  onClick={() => setGorunenTerimSayisi(prev => prev + 10)}
+                  className="w-full py-4 bg-blue-50 hover:bg-blue-100 text-blue-700 font-medium rounded-xl transition-colors flex items-center justify-center gap-2"
+                >
+                  <ChevronDown className="w-5 h-5" />
+                  Daha Fazla Göster ({filtrelenmisTerimler.length - gorunenTerimSayisi} kaldı)
+                </motion.button>
+              )}
+            </div>
           ) : (
+            /* DETAYLI GÖRÜNÜM - Masaüstü İçin */
             Object.keys(gruplandirmisTerimler)
               .sort()
               .map(harf => (
-                <div key={harf} id={`harf-${harf}`} className="mb-12">
-                  <h2 className="text-3xl font-bold text-blue-600 mb-6 border-b-2 border-blue-200 pb-2">
+                <div key={harf} id={`harf-${harf}`} className="mb-8 lg:mb-12">
+                  <h2 className="text-2xl lg:text-3xl font-bold text-blue-600 mb-4 lg:mb-6 border-b-2 border-blue-200 pb-2">
                     {harf} Harfi
                   </h2>
-                  <div className="grid gap-6">
+                  <div className="grid gap-4 lg:gap-6">
                     {gruplandirmisTerimler[harf].map((terim, index) => (
                       <motion.div
                         key={`${harf}-${index}`}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: index * 0.1 }}
-                        className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
+                        className="bg-white p-4 lg:p-6 rounded-xl lg:rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
                       >
-                        <div className="flex flex-col gap-4">
-                          <div className="flex flex-col md:flex-row md:items-start gap-4">
+                        <div className="flex flex-col gap-3 lg:gap-4">
+                          <div className="flex flex-col md:flex-row md:items-start gap-3 lg:gap-4">
                             <div className="flex-1">
-                              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                              <h3 className="text-lg lg:text-xl font-bold text-slate-900 mb-2">
                                 {terim.terim}
                               </h3>
-                              <p className="text-slate-700 leading-relaxed mb-3">
+                              <p className="text-slate-700 leading-relaxed mb-3 text-sm lg:text-base">
                                 {terim.tanimı}
                               </p>
                             </div>
@@ -684,8 +811,8 @@ export default function HukukiSozluk() {
                             </div>
                           </div>
                           
-                          {/* Aksion Butonları */}
-                          <div className="flex flex-wrap gap-3 pt-3 border-t border-slate-100">
+                          {/* Detaylı Aksiyon Butonları */}
+                          <div className="flex flex-wrap gap-2 lg:gap-3 pt-3 border-t border-slate-100">
                             <button
                               onClick={() => favoriyeEkle(terim.terim)}
                               className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -695,7 +822,9 @@ export default function HukukiSozluk() {
                               }`}
                             >
                               <Heart className={`w-4 h-4 ${favoriler.includes(terim.terim) ? 'fill-current' : ''}`} />
-                              {favoriler.includes(terim.terim) ? 'Favorilerde' : 'Favoriye Ekle'}
+                              <span className="hidden sm:inline">
+                                {favoriler.includes(terim.terim) ? 'Favorilerde' : 'Favoriye Ekle'}
+                              </span>
                             </button>
                             
                             <button
@@ -705,12 +834,12 @@ export default function HukukiSozluk() {
                               {kopyalananTerim === terim.terim ? (
                                 <>
                                   <CheckCircle className="w-4 h-4 text-green-600" />
-                                  <span className="text-green-600">Kopyalandı</span>
+                                  <span className="text-green-600 hidden sm:inline">Kopyalandı</span>
                                 </>
                               ) : (
                                 <>
                                   <Copy className="w-4 h-4" />
-                                  Kopyala
+                                  <span className="hidden sm:inline">Kopyala</span>
                                 </>
                               )}
                             </button>
@@ -720,7 +849,7 @@ export default function HukukiSozluk() {
                               className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors bg-slate-100 text-slate-600 hover:bg-slate-200"
                             >
                               <Share2 className="w-4 h-4" />
-                              Paylaş
+                              <span className="hidden sm:inline">Paylaş</span>
                             </button>
                           </div>
                         </div>
